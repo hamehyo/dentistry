@@ -5,8 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        ul,li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
         .renew_list_box{
-
+            position: fixed;
+            left: 50%;
+            top: 40%;
+            transform: translate(-50%,-50%);
+            max-width: 800px;
+        }
+        .renew_list_box ul{}
+        .renew_list_box ul li{
+            margin: 0 0 20px 0;
+            text-align: center;
+        }
+        .renew_list_box ul li a{
+            display: inline-block;
+            padding: 8px 10px;
+            color: #fff;
+            background:#333;
+            border-radius: 10px;
+            box-sizing: border-box;
         }
 
     </style>
@@ -17,13 +44,13 @@
     <div class="renew_list_box">
 
         <ul>
-            <li><a href="00_01_classroom_intro.html">교실소개</a></li>
-            <li><a href="00_02_professor_intro.html">교수소개</a></li>
-            <li><a href="01_01_my_basic_info.html">마이페이지 - 기본정보</a></li>
-            <li><a href="01_02_my_basic_info.html">마이페이지 - 기본정보수정</a></li>
-            <li><a href="02_my_study_area.html">마이페이지 - 연구분야/방법</a></li>
-            <li><a href="03_my_study_list.html">마이페이지 - 연구목록</a></li>
-            <li><a href="04_my_academic.html">마이페이지 - 학술발표</a></li>
+            <li><a href="00_01_classroom_intro.html" target="_blank" >교실소개</a></li>
+            <li><a href="00_02_professor_intro.html" target="_blank" >교수소개</a></li>
+            <li><a href="01_01_my_basic_info.html" target="_blank">마이페이지 - 기본정보</a></li>
+            <li><a href="01_02_my_basic_info.html" target="_blank">마이페이지 - 기본정보수정</a></li>
+            <li><a href="02_my_study_area.html" target="_blank">마이페이지 - 연구분야/방법</a></li>
+            <li><a href="03_my_study_list.html" target="_blank">마이페이지 - 연구목록</a></li>
+            <li><a href="04_my_academic.html" target="_blank">마이페이지 - 학술발표</a></li>
         </ul>
 
     </div><!-- //renew_list_box -->

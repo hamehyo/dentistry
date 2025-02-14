@@ -1,10 +1,6 @@
 $(function(){
     
 
-
-
-
-
     // 목록화면 이미지 업로드
     $("#upload_list_file").on("change", function(event) {
         var file = event.target.files[0];
@@ -92,10 +88,22 @@ $(function(){
     $(window).on("resize",function() {
         if( $(window).width() <= 1023 ) {
 
+            /* 추가버튼 */
+            $(".rsh_box .btn_add").on("click", function(e){
+                $("#header, #lnb_wrap, #footer").css({ "z-index" : 4 });
+            });
 
-            //console.log("mo");
-        }else{
-            
+            /* 취소버튼 */
+            $(".rsh_box .cancel").on("click", function(e){
+                $("#header,").css({ "z-index" : 9997 });
+                $("#lnb_wrap").css({ "z-index" : 6 });
+                $("#footer").css({ "z-index" : 5 });
+            });
+
+            /* 리스트 클릭 시 수정화면 */
+            $(".rsh_list li .rsh_txt").on("click", function(e){
+                $("#header, #lnb_wrap, #footer").css({ "z-index" : 4 });
+            });
 
         }
         

@@ -14,7 +14,6 @@
     <link rel="icon" href="https://dentistry.snu.ac.kr/ko/res/images/common/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="https://dentistry.snu.ac.kr/ko/res/images/common/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon-precomposed" href="https://dentistry.snu.ac.kr/ko/res/images/common/mobileicon.png">
-    <link type="text/css" href="https://dentistry.snu.ac.kr/ko/res/css/common.css" rel="stylesheet">
     <link type="text/css" href="https://dentistry.snu.ac.kr/ko/res/css/content.css" rel="stylesheet">
     <link type="text/css" href="https://dentistry.snu.ac.kr/ko/res/css/calendar.css" rel="stylesheet">
     <link type="text/css" href="https://dentistry.snu.ac.kr/ko/res/css/jquery-ui.css" rel="stylesheet">
@@ -22,166 +21,164 @@
     <link type="text/css" href="https://dentistry.snu.ac.kr/ko/res/css/swiper.css" rel="stylesheet">
     <link type="text/css" href="https://dentistry.snu.ac.kr/ko/res/css/slick.css" rel="stylesheet">
     <link type="text/css" href="https://dentistry.snu.ac.kr/ko/res/css/professor.css" rel="stylesheet">
-    <link type="text/css" href="jquery-ui.css" rel="stylesheet">
-
     <style>
         @font-face {
             font-family:"Montserrat";
             font-style:normal;
             font-weight:400;
-            src: url("/ko/res/fonts/montserrat-500.eot");
+            src: url("./ko/res/fonts/montserrat-500.eot");
             src: local(""),
-                url("/ko/res/fonts/montserrat-500.eot?#iefix") format("embedded-opentype"),
-                url("/ko/res/fonts/montserrat-500.woff2") format("woff2"),
-                url("/ko/res/fonts/montserrat-500.woff") format("woff"),
-                url("/ko/res/fonts/montserrat-500.ttf") format("truetype"),
-                url("/ko/res/fonts/montserrat-500.svg#Montserrat") format("svg");
+                url("./ko/res/fonts/montserrat-500.eot?#iefix") format("embedded-opentype"),
+                url("./ko/res/fonts/montserrat-500.woff2") format("woff2"),
+                url("./ko/res/fonts/montserrat-500.woff") format("woff"),
+                url("./ko/res/fonts/montserrat-500.ttf") format("truetype"),
+                url("./ko/res/fonts/montserrat-500.svg#Montserrat") format("svg");
         }
 
         @font-face {
             font-family:"Roboto";
             font-style:normal;
             font-weight:300;
-            src: url("/ko/res/fonts/roboto-300.eot");
+            src: url("./ko/res/fonts/roboto-300.eot");
             src: local(""),
-                url("/ko/res/fonts/roboto-300.eot?#iefix") format("embedded-opentype"),
-                url("/ko/res/fonts/roboto-300.woff2") format("woff2"),
-                url("/ko/res/fonts/roboto-300.woff") format("woff"),
-                url("/ko/res/fonts/roboto-300.ttf") format("truetype"),
-                url("/ko/res/fonts/roboto-300.svg#Roboto") format("svg");
+                url("./ko/res/fonts/roboto-300.eot?#iefix") format("embedded-opentype"),
+                url("./ko/res/fonts/roboto-300.woff2") format("woff2"),
+                url("./ko/res/fonts/roboto-300.woff") format("woff"),
+                url("./ko/res/fonts/roboto-300.ttf") format("truetype"),
+                url("./ko/res/fonts/roboto-300.svg#Roboto") format("svg");
         }
 
         @font-face {
             font-family:"Roboto";
             font-style:normal;
             font-weight:300;
-            src: url("/ko/res/fonts/roboto-300.eot");
+            src: url("./ko/res/fonts/roboto-300.eot");
             src: local(""),
-                url("/ko/res/fonts/roboto-300.eot?#iefix") format("embedded-opentype"),
-                url("/ko/res/fonts/roboto-300.woff2") format("woff2"),
-                url("/ko/res/fonts/roboto-300.woff") format("woff"),
-                url("/ko/res/fonts/roboto-300.ttf") format("truetype"),
-                url("/ko/res/fonts/roboto-300.svg#Roboto") format("svg");
+                url("./ko/res/fonts/roboto-300.eot?#iefix") format("embedded-opentype"),
+                url("./ko/res/fonts/roboto-300.woff2") format("woff2"),
+                url("./ko/res/fonts/roboto-300.woff") format("woff"),
+                url("./ko/res/fonts/roboto-300.ttf") format("truetype"),
+                url("./ko/res/fonts/roboto-300.svg#Roboto") format("svg");
         }
 
         @font-face {
             font-family:"Roboto";
             font-style:normal;
             font-weight:400;
-            src: url("/ko/res/fonts/roboto-400.eot");
+            src: url("./ko/res/fonts/roboto-400.eot");
             src: local(""),
-                url("/ko/res/fonts/roboto-400.eot?#iefix") format("embedded-opentype"),
-                url("/ko/res/fonts/roboto-400.woff2") format("woff2"),
-                url("/ko/res/fonts/roboto-400.woff") format("woff"),
-                url("/ko/res/fonts/roboto-400.ttf") format("truetype"),
-                url("/ko/res/fonts/roboto-400.svg#Roboto") format("svg");
+                url("./ko/res/fonts/roboto-400.eot?#iefix") format("embedded-opentype"),
+                url("./ko/res/fonts/roboto-400.woff2") format("woff2"),
+                url("./ko/res/fonts/roboto-400.woff") format("woff"),
+                url("./ko/res/fonts/roboto-400.ttf") format("truetype"),
+                url("./ko/res/fonts/roboto-400.svg#Roboto") format("svg");
         }
         
         @font-face {
             font-family:"Roboto";
             font-style:normal;
             font-weight:500;
-            src: url("/ko/res/fonts/roboto-500.eot");
+            src: url("./ko/res/fonts/roboto-500.eot");
             src: local(""),
-                url("/ko/res/fonts/roboto-500.eot?#iefix") format("embedded-opentype"),
-                url("/ko/res/fonts/roboto-500.woff2") format("woff2"),
-                url("/ko/res/fonts/roboto-500.woff") format("woff"),
-                url("/ko/res/fonts/roboto-500.ttf") format("truetype"),
-                url("/ko/res/fonts/roboto-500.svg#Roboto") format("svg");
+                url("./ko/res/fonts/roboto-500.eot?#iefix") format("embedded-opentype"),
+                url("./ko/res/fonts/roboto-500.woff2") format("woff2"),
+                url("./ko/res/fonts/roboto-500.woff") format("woff"),
+                url("./ko/res/fonts/roboto-500.ttf") format("truetype"),
+                url("./ko/res/fonts/roboto-500.svg#Roboto") format("svg");
         }
         
         @font-face {
             font-family:"Roboto";
             font-style:normal;
             font-weight:700;
-            src: url("/ko/res/fonts/roboto-700.eot");
+            src: url("./ko/res/fonts/roboto-700.eot");
             src: local(""),
-                url("/ko/res/fonts/roboto-700.eot?#iefix") format("embedded-opentype"),
-                url("/ko/res/fonts/roboto-700.woff2") format("woff2"),
-                url("/ko/res/fonts/roboto-700.woff") format("woff"),
-                url("/ko/res/fonts/roboto-700.ttf") format("truetype"),
-                url("/ko/res/fonts/roboto-700.svg#Roboto") format("svg");
+                url("./ko/res/fonts/roboto-700.eot?#iefix") format("embedded-opentype"),
+                url("./ko/res/fonts/roboto-700.woff2") format("woff2"),
+                url("./ko/res/fonts/roboto-700.woff") format("woff"),
+                url("./ko/res/fonts/roboto-700.ttf") format("truetype"),
+                url("./ko/res/fonts/roboto-700.svg#Roboto") format("svg");
         }
 
         @font-face {
             font-family:"Noto Sans KR";
             font-style:normal;
             font-weight:100;
-            src: url("/ko/res/fonts/noto-sans-kr-100.eot");
+            src: url("./ko/res/fonts/noto-sans-kr-100.eot");
             src: local(""),
-                url("/ko/res/fonts/noto-sans-kr-100.eot?#iefix") format("embedded-opentype"),
-                url("/ko/res/fonts/noto-sans-kr-100.woff2") format("woff2"),
-                url("/ko/res/fonts/noto-sans-kr-100.woff") format("woff"),
-                url("/ko/res/fonts/noto-sans-kr-100.otf") format("opentype"),
-                url("/ko/res/fonts/noto-sans-kr-100.svg#NotoSansKR") format("svg");
+                url("./ko/res/fonts/noto-sans-kr-100.eot?#iefix") format("embedded-opentype"),
+                url("./ko/res/fonts/noto-sans-kr-100.woff2") format("woff2"),
+                url("./ko/res/fonts/noto-sans-kr-100.woff") format("woff"),
+                url("./ko/res/fonts/noto-sans-kr-100.otf") format("opentype"),
+                url("./ko/res/fonts/noto-sans-kr-100.svg#NotoSansKR") format("svg");
         }
 
         @font-face {
             font-family:"Noto Sans KR";
             font-style:normal;
             font-weight:300;
-            src: url("/ko/res/fonts/noto-sans-kr-300.eot");
+            src: url("./ko/res/fonts/noto-sans-kr-300.eot");
             src: local(""),
-                url("/ko/res/fonts/noto-sans-kr-300.eot?#iefix") format("embedded-opentype"),
-                url("/ko/res/fonts/noto-sans-kr-300.woff2") format("woff2"),
-                url("/ko/res/fonts/noto-sans-kr-300.woff") format("woff"),
-                url("/ko/res/fonts/noto-sans-kr-300.otf") format("opentype"),
-                url("/ko/res/fonts/noto-sans-kr-300.svg#NotoSansKR") format("svg");
+                url("./ko/res/fonts/noto-sans-kr-300.eot?#iefix") format("embedded-opentype"),
+                url("./ko/res/fonts/noto-sans-kr-300.woff2") format("woff2"),
+                url("./ko/res/fonts/noto-sans-kr-300.woff") format("woff"),
+                url("./ko/res/fonts/noto-sans-kr-300.otf") format("opentype"),
+                url("./ko/res/fonts/noto-sans-kr-300.svg#NotoSansKR") format("svg");
         }
 
         @font-face {
             font-family:"Noto Sans KR";
             font-style:normal;
             font-weight:400;
-            src: url("/ko/res/fonts/noto-sans-kr-400.eot");
+            src: url("./ko/res/fonts/noto-sans-kr-400.eot");
             src: local(""),
-                url("/ko/res/fonts/noto-sans-kr-400.eot?#iefix") format("embedded-opentype"),
-                url("/ko/res/fonts/noto-sans-kr-400.woff2") format("woff2"),
-                url("/ko/res/fonts/noto-sans-kr-400.woff") format("woff"),
-                url("/ko/res/fonts/noto-sans-kr-400.otf") format("opentype"),
-                url("/ko/res/fonts/noto-sans-kr-400.svg#NotoSansKR") format("svg");
+                url("./ko/res/fonts/noto-sans-kr-400.eot?#iefix") format("embedded-opentype"),
+                url("./ko/res/fonts/noto-sans-kr-400.woff2") format("woff2"),
+                url("./ko/res/fonts/noto-sans-kr-400.woff") format("woff"),
+                url("./ko/res/fonts/noto-sans-kr-400.otf") format("opentype"),
+                url("./ko/res/fonts/noto-sans-kr-400.svg#NotoSansKR") format("svg");
         }
 
         @font-face {
             font-family:"Noto Sans KR";
             font-style:normal;
             font-weight:500;
-            src: url("/ko/res/fonts/noto-sans-kr-500.eot");
+            src: url("./ko/res/fonts/noto-sans-kr-500.eot");
             src: local(""),
-                url("/ko/res/fonts/noto-sans-kr-500.eot?#iefix") format("embedded-opentype"),
-                url("/ko/res/fonts/noto-sans-kr-500.woff2") format("woff2"),
-                url("/ko/res/fonts/noto-sans-kr-500.woff") format("woff"),
-                url("/ko/res/fonts/noto-sans-kr-500.otf") format("opentype"),
-                url("/ko/res/fonts/noto-sans-kr-500.svg#NotoSansKR") format("svg");
+                url("./ko/res/fonts/noto-sans-kr-500.eot?#iefix") format("embedded-opentype"),
+                url("./ko/res/fonts/noto-sans-kr-500.woff2") format("woff2"),
+                url("./ko/res/fonts/noto-sans-kr-500.woff") format("woff"),
+                url("./ko/res/fonts/noto-sans-kr-500.otf") format("opentype"),
+                url("./ko/res/fonts/noto-sans-kr-500.svg#NotoSansKR") format("svg");
         }
 
         @font-face {
             font-family:"Noto Sans KR";
             font-style:normal;
             font-weight:700;
-            src: url("/ko/res/fonts/noto-sans-kr-700.eot");
+            src: url("./ko/res/fonts/noto-sans-kr-700.eot");
             src: local(""),
-                url("/ko/res/fonts/noto-sans-kr-700.eot?#iefix") format("embedded-opentype"),
-                url("/ko/res/fonts/noto-sans-kr-700.woff2") format("woff2"),
-                url("/ko/res/fonts/noto-sans-kr-700.woff") format("woff"),
-                url("/ko/res/fonts/noto-sans-kr-700.otf") format("opentype"),
-                url("/ko/res/fonts/noto-sans-kr-700.svg#NotoSansKR") format("svg");
+                url("./ko/res/fonts/noto-sans-kr-700.eot?#iefix") format("embedded-opentype"),
+                url("./ko/res/fonts/noto-sans-kr-700.woff2") format("woff2"),
+                url("./ko/res/fonts/noto-sans-kr-700.woff") format("woff"),
+                url("./ko/res/fonts/noto-sans-kr-700.otf") format("opentype"),
+                url("./ko/res/fonts/noto-sans-kr-700.svg#NotoSansKR") format("svg");
         }
 
         @font-face {
             font-family:"Noto Sans KR";
             font-style:normal;
             font-weight:900;
-            src: url("/ko/res/fonts/noto-sans-kr-900.eot");
+            src: url("./ko/res/fonts/noto-sans-kr-900.eot");
             src: local(""),
-                url("/ko/res/fonts/noto-sans-kr-900.eot?#iefix") format("embedded-opentype"),
-                url("/ko/res/fonts/noto-sans-kr-900.woff2") format("woff2"),
-                url("/ko/res/fonts/noto-sans-kr-900.woff") format("woff"),
-                url("/ko/res/fonts/noto-sans-kr-900.otf") format("opentype"),
-                url("/ko/res/fonts/noto-sans-kr-900.svg#NotoSansKR") format("svg");
+                url("./ko/res/fonts/noto-sans-kr-900.eot?#iefix") format("embedded-opentype"),
+                url("./ko/res/fonts/noto-sans-kr-900.woff2") format("woff2"),
+                url("./ko/res/fonts/noto-sans-kr-900.woff") format("woff"),
+                url("./ko/res/fonts/noto-sans-kr-900.otf") format("opentype"),
+                url("./ko/res/fonts/noto-sans-kr-900.svg#NotoSansKR") format("svg");
         }
     </style>
-    <link type="text/css" href="/professor.css" rel="stylesheet">
+    <link type="text/css" href="./professor.css" rel="stylesheet">
     <script type="text/javascript" src="https://dentistry.snu.ac.kr/ko/res/js/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/min/moment.min.js"></script>
     <script type="text/javascript" src="https://dentistry.snu.ac.kr/ko/res/js/common.js"></script>
@@ -194,8 +191,7 @@
     <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=3kiwlrwsir"></script>
     <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
     <script type="text/javascript" src="https://dentistry.snu.ac.kr/ko/res/js/swiper.min.js"></script>
-    <script type="text/javascript" src="/mypage.js"></script>
-    <script type="text/javascript" src="/jquery-ui.js"></script>
+    <script type="text/javascript" src="./mypage.js"></script>
     <!--  defaultHeader  E-->
     <link type="text/css" rel="stylesheet" charset="UTF-8" href="https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.26tY-h6gH9w.L.W.O/am=BgM/d=0/rs=AN8SPfowrRiAotkQD9r4k3ANeQYGsCLZ7g/m=el_main_css">
     <script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/_/translate_http/_/js/k=translate_http.tr.ko.bkAtqTd17kg.O/am=ABA/d=1/exm=el_conf/ed=1/rs=AN8SPfq2d-qInOccM79FLUYunK5fSiwYyg/m=el_main"></script>

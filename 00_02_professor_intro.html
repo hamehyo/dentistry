@@ -377,14 +377,17 @@
         </header>
 
         <div class="sub_visual intro">
-            <h3>마이페이지</h3>
+            <h3>교실/교수진 소개</h3>
+            <h4>Excellence Innovation, Integrity Respect, Leadership Social Responsibility</h4>
         </div>
 
         <div id="breadcrumb">
             <div class="sub_nav">
                 <ul>
                     <li><a href="/" title="홈">HOME</a></li>
-                    <li><a href="#" title="마이페이지">마이페이지</a></li>
+                    <li><a href="javascript:fnGoMenu('0',  '1200000','소개' ,'/fnt/bbm/bbs/selectBoardArticleView.do?nttId=0')" title="소개">소개</a></li>
+                    <li><a href="javascript:fnGoMenu('1200000',  '1202000','교실/교수진 소개' ,'/fnt/bbm/cla/selectClassInfoList.do?classTy=B')" title="교실/교수진 소개">교실/교수진 소개</a></li>
+                    <li>기초치의학교실</li> 
                 </ul>
             </div>
             <div class="btn_inner">
@@ -403,14 +406,12 @@
 
         <div id="lnb_wrap">
             <div class="snb_inner">
-                <div class="swiper-container snbSwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><a href="#" title="기본정보"><span class="text">기본정보</span></a></div>
-                        <div class="swiper-slide on"><a href="#" title="연구분야/방법"><span class="text">연구분야/방법</span></a></div>
-                        <div class="swiper-slide"><a href="#" title="연구목록"><span class="text">연구목록</span></a></div>
-                        <div class="swiper-slide"><a href="#" title="학술발표"><span class="text">학술발표</span></a></div>
+                <div class="swiper-container snbSwiper swiper-container-initialized swiper-container-horizontal">
+                    <div class="swiper-wrapper" style="transition-duration: 0ms;">
+                        <div class="swiper-slide on swiper-slide-prev"><a href="javascript:fnGoMenu('1202000',  '1202010','기초치의학교실' ,'/fnt/bbm/cla/selectClassInfoList.do?classTy=B')" title="기초치의학교실"><span class="text">기초치의학교실</span></a></div>
+                        <div class="swiper-slide swiper-slide-active"><a href="javascript:fnGoMenu('1202000',  '1202020','임상치의학교실' ,'/fnt/bbm/cla/selectClassInfoList.do?classTy=T')" title="임상치의학교실"><span class="text">임상치의학교실</span></a></div>
                     </div>
-                </div>
+                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
             </div>
             <script>
             function enterkey(event){
@@ -922,11 +923,58 @@
         <div id="contents">
             <div class="inner_row">
                 <div class="board_wrap">
-
+                    <div class="search_box">
+                        <form name="searchForm" id="searchForm" method="post">
+                        <input type="hidden" id="classTy" name="classTy" value="B">
+                        <input type="hidden" id="classNo" name="classNo" value="10">
+                        <input type="hidden" id="lastIndex" name="lastIndex" value="10">
+                        <input type="hidden" id="pageIndex" name="pageIndex" value="1">
+                        <input type="hidden" id="recordCountPerPage" name="recordCountPerPage" value="10">
+                        <input type="hidden" id="profSeq" name="profSeq" value="0">
+                        <ul>
+                            <li>
+                                <label for="searchKeyword" class="a11y-hidden">검색어</label>
+                                <input type="text" name="searchKeyword" id="sch_key" class="inteResult_input" title="검색어 입력" placeholder="이름, 학과, 직위, 전공, 이메일로 검색 가능합니다." onkeydown="javascript:if(event.keyCode == 13){loadInfo(); return false;}" value="">
+                                <button type="button" class="inteSearch_btn" aria-label="검색" onclick="resultForm_chk();"></button>
+                            </li>
+                        </ul>
+                        </form>
+                    </div>
                     
                     <div id="classInfoList">    
-                        <script>
 
+                        <div class="m_sub_tab_tit">전체</div>
+                        
+                        <!-- 교실 리스트와 교실내용 영역(.html) -->
+                        <div class="sub_tab ty01" style="display: none;">
+                            <ul>
+                                <li><a href="#n" onclick="indexReload(0)">전체</a></li>		
+                                <li class="active"><a href="#n" onclick="indexReload(10)">구강해부학교실</a></li>
+                                <li><a href="#n" onclick="indexReload(13)">구강병리학교실</a></li>
+                                <li><a href="#n" onclick="indexReload(19)">예방치학교실</a></li>
+                                <li><a href="#n" onclick="indexReload(17)">치과생체재료과학교실</a></li>
+                                <li><a href="#n" onclick="indexReload(9)">치과약리학교실</a></li>
+                                <li><a href="#n" onclick="indexReload(11)">구강생리학교실</a></li>
+                                <li><a href="#n" onclick="indexReload(14)">구강생화학교실</a></li>
+                                <li><a href="#n" onclick="indexReload(15)">구강미생물학-면역학교실</a></li>
+                                <li><a href="#n" onclick="indexReload(16)">치과경영정보학교실</a></li>
+                                <li><a href="#n" onclick="indexReload(18)">구강조직-발생생물학교실</a></li>
+                                <li><a href="#n" onclick="indexReload(20)">치의학교육학</a></li>
+                                <li><a href="#n" onclick="indexReload(22)">치의과학과</a></li>
+                            </ul>
+                        </div>
+
+
+                        <!-- start : 교실소개/교수소개 탭 메뉴 -->
+                        <div class="class_tab">
+                            <ul>
+                                <li><a href="#">교실소개</a></li>
+                                <li class="on"><a href="#">교수소개</a></li>
+                            </ul>
+                        </div><!-- //class_tab -->
+                        <!-- end : 교실소개/교수소개 탭 메뉴 -->
+                    
+                        <script>
                             (function(win, $){
                             var $html = $("html");
                             $html.css("overflow-x", "hidden");
@@ -1137,39 +1185,152 @@
                         
                         </script>
 
-                        <div class="my_form_wrap">
 
-                            <div class="my_form_inner">
-
-                                <div class="research_box">
-                                    <h4>Current Research Interests</h4>
-                                    <div class="editor_set_wrap">
-                                        <div>
-                                            에디터 영역
-                                        </div>
-                                    </div><!-- //editor_set_wrap -->
-                                </div><!-- //research_box -->
-                                
-                                <div class="research_box last">
-                                    <h4>Research Methodology</h4>
-                                    <div class="editor_set_wrap">
-                                        <div>
-                                            에디터 영역
-                                        </div>
-                                    </div><!-- //editor_set_wrap -->
-                                </div><!-- //research_box -->
-                                
-                                <div class="form_btn_box">
-                                    <a href="#" class="btn btn_cancel">취소</a>
-                                    <a href="#" class="btn btn_wide btn_save">저장</a>
-                                </div><!-- //form_btn_box -->
-                                
-                            </div><!-- //my_form_inner -->
-
-                        </div><!-- //my_form_wrap -->
 
                     </div><!-- //classInfoList -->
                     
+                    <div id="proInfoList">
+
+                        <script type="text/javascript" language="javascript">
+                        /**
+                         *  페이징 함수 (고정)
+                         */
+                        function profLinkPage(pageNo){
+                        var form = document.searchForm;
+                        form.pageIndex.value = pageNo;
+                        var param = $("#searchForm").serialize();
+                        $.post("/fnt/bbm/cla/selectProInfoListAjax.do", param, function(data, status){
+                            $("#proInfoList").html(data);	})
+
+                        //화면 위치 이동
+                        $('html,body').animate({
+                            scrollTop: $(".board_inner").offset().top},
+                            'slow');
+                        }
+                        </script>
+
+                        <div class="board_top">
+                            <span class="cnt">전체 <strong>4</strong>명</span>
+                            <input type="hidden" id="toCnt" value="4">
+                        </div>
+
+
+                        <div class="board_inner renew">
+                            <ul class="class_list_box">
+                                <li class="class_list left">
+                                    <div class="prof_img">
+                                        <a href="#" onclick="profDetail(103); ">
+                                            <img src="https://dentistry.snu.ac.kr/upload/prof/목록_1716437487067.jpg" alt="박영석">
+                                        </a>
+                                    </div>
+                                    <div class="prof_txt">
+                                        <a href="#" onclick="profDetail(103); " class="name">
+                                            <strong>박영석</strong>
+                                            <em>주임교수</em>
+                                        </a>
+                                        <ul class="info_list">
+                                            <li>
+                                                <span class="tit">학과</span>
+                                                <span>구강해부학교실</span>
+                                            </li>
+                                            <li>
+                                                <span class="tit">전공</span>
+                                                <span>구강해부학</span>
+                                            </li>
+                                        </ul>
+                                        
+                                        <a href="https://snusci.elsevierpure.com/en/persons/young-seok-park" target="_blank" class="btn_detail" title="연구프로필"><span>연구프로필</span></a>
+                                        
+                                    </div><!-- //prof_txt -->
+                                </li>
+                                <li class="class_list right">
+                                    <div class="prof_img">
+                                        <a href="#" onclick="profDetail(59); ">
+                                            <img src="https://dentistry.snu.ac.kr/upload/prof/목록_1716451337422.jpg" alt="이승표">
+                                        </a>
+                                    </div>
+                                    <div class="prof_txt">
+                                        <a href="#" onclick="profDetail(59); " class="name">
+                                            <strong>이승표</strong>
+                                            <em>교수</em>
+                                        </a>
+                                        <ul class="info_list">
+                                            <li>
+                                                <span class="tit">학과</span>
+                                                <span>구강해부학교실</span>
+                                            </li>
+                                            <li>
+                                                <span class="tit">전공</span>
+                                                <span>치아형태학, 치과인공지능, 국제협력</span>
+                                            </li>
+                                        </ul>
+                                        
+                                        <a href="https://snusci.elsevierpure.com/en/persons/seung-pyo-lee" target="_blank" class="btn_detail" title="연구프로필"><span>연구프로필</span></a>
+                                        
+                                    </div><!-- //prof_txt -->
+                                </li>
+                                <li class="class_list left">
+                                    <div class="prof_img">
+                                        <a href="#" onclick="profDetail(75); ">
+                                            <img src="https://dentistry.snu.ac.kr/upload/prof/목록_1716451965557.jpg" alt="장미숙">
+                                        </a>
+                                    </div>
+                                    <div class="prof_txt">
+                                        <a href="#" onclick="profDetail(75); " class="name">
+                                            <strong>장미숙</strong>
+                                            <em>교수</em>
+                                        </a>
+                                        <ul class="info_list">
+                                            <li>
+                                                <span class="tit">학과</span>
+                                                <span>구강해부학교실</span>
+                                            </li>
+                                            <li>
+                                                <span class="tit">전공</span>
+                                                <span>신경해부학，신경생물학, 줄기세포학</span>
+                                            </li>
+                                        </ul>
+                                        
+                                        <a href="https://snusci.elsevierpure.com/en/persons/mi-sook-chang" target="_blank" class="btn_detail" title="연구프로필"><span>연구프로필</span></a>
+                                        
+                                    </div><!-- //prof_txt -->
+                                </li>
+                                <li class="class_list right">
+                                    <div class="prof_img">
+                                        <a href="#" onclick="profDetail(417); ">
+                                            <img src="https://dentistry.snu.ac.kr/upload/prof/목록1_1735422356892.jpg" alt="방강미">
+                                        </a>
+                                    </div>
+                                    <div class="prof_txt">
+                                        <a href="#" onclick="profDetail(417); " class="name">
+                                            <strong>방강미</strong>
+                                            <em>조교수</em>
+                                        </a>
+                                        <ul class="info_list">
+                                            <li>
+                                                <span class="tit">학과</span>
+                                                <span>구강해부학교실</span>
+                                            </li>
+                                            <li>
+                                                <span class="tit">전공</span>
+                                                <span>구강해부학</span>
+                                            </li>
+                                        </ul>
+                                        
+                                    </div><!-- //prof_txt -->
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="pagination">
+                            <div class="pagination_inner">
+                                <a href="#" class="pg_num on">1</a>
+
+                            </div><!-- //pagination_inner -->
+                        </div><!-- //pagination -->
+
+                    </div>
+
                 </div>     
             </div>
         </div>

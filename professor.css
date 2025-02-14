@@ -1,0 +1,1573 @@
+/* 교실/교수 소개 탭 메뉴 추가 및 마이페이지 추가 */
+
+.class_tab{
+    margin:0 0 60px;
+}
+.class_tab ul{
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #eff3f8;
+    border:3px solid #eff3f8;
+    border-radius: 8px;
+}
+.class_tab ul li a{
+    display: inline-block;
+    padding: 8px 44px;
+    letter-spacing: -0.5px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #626262;
+}
+.class_tab ul li.on a{
+    font-weight: 700;
+    color:#fff;
+    background-color: #042e85;
+    border-radius: 7px;
+}
+
+
+
+.board_wrap .reserach_table_outer h4{
+    width: 100%;
+    height: 45px;
+    line-height: 28px;
+    letter-spacing: -0.5px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #222;
+    border-bottom: 2px solid #444;
+    box-sizing: border-box;
+}
+.board_wrap .reserach_table_outer .reserach_table_box{
+    margin: 20px 0 0;
+    width: 100%;
+}
+.board_wrap .reserach_table_outer .reserach_table{
+    width: 100%;
+}
+.board_wrap .reserach_table_outer .reserach_table tr th{
+    padding:20px 0 20px 15px;
+    text-align: left;
+    letter-spacing: -0.5px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #042e85;
+}
+.board_wrap .reserach_table_outer .reserach_table tr th:nth-child(1){
+    width: 50%;
+}
+.board_wrap .reserach_table_outer .reserach_table tr th:nth-child(2){
+    width: 15%;
+}
+.board_wrap .reserach_table_outer .reserach_table tr th:nth-child(3){
+    width: 25%;
+}
+.board_wrap .reserach_table_outer .reserach_table tr th:nth-child(4){
+    width: 10%;
+}
+.board_wrap .reserach_table_outer .reserach_table tr td{
+    padding:15px 15px 13px;
+    line-height: 1.4;
+    letter-spacing: -0.2px;
+    font-weight: 300;
+    font-size: 16px;
+    color: #000;
+    word-break: keep-all;
+}
+.board_wrap .reserach_table_outer .reserach_table tr td:nth-child(1){
+    padding-right: 80px;
+}
+.board_wrap .reserach_table_outer .reserach_table tbody tr:nth-child(2n-1){
+    background-color: #eff3f8;
+}
+
+
+
+
+.board_wrap .my_form_wrap{}
+.board_wrap .my_form_wrap .my_form_inner{
+    position: relative;
+}
+.board_wrap .my_form_wrap .input_box{
+    width: 100%;
+    height: 50px;
+}
+.board_wrap .my_form_wrap .input_box input{
+    padding: 0 15px;
+    width: 100%;
+    height: 100%;
+    letter-spacing: -0.8px;
+    font-family:"Roboto", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", sans-serif;
+    font-size: 16px;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+.board_wrap .my_form_wrap input:-webkit-autofill,
+.board_wrap .my_form_wrap input:-webkit-autofill:hover,
+.board_wrap .my_form_wrap input:-webkit-autofill:focus,
+.board_wrap .my_form_wrap input:-webkit-autofill:active {
+    -webkit-text-fill-color: #000;
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+    box-shadow: 0 0 0px 1000px #fff inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.board_wrap .my_form_wrap input:autofill,
+.board_wrap .my_form_wrap input:autofill:hover,
+.board_wrap .my_form_wrap input:autofill:focus,
+.board_wrap .my_form_wrap input:autofill:active {
+    -webkit-text-fill-color: #000;
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+    box-shadow: 0 0 0px 1000px #fff inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.board_wrap .my_form_wrap .input_box input:read-only{
+    background:#f0f3f8;
+    border: none;
+    color:#7d7d7d;
+}
+.board_wrap .my_form_wrap .input_box input::placeholder{
+    letter-spacing: -0.3px;
+    color: #bfbfbf;
+}
+.board_wrap .my_form_wrap .my_form_inner .basic_info_conts{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.board_wrap .my_form_wrap h4{
+    display: block;
+    margin:0 0 35px;
+    padding: 12px 0;
+    letter-spacing: -0.5px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #222;
+    border-bottom: 2px solid #444;
+    box-sizing: border-box;
+}
+
+.board_wrap .my_form_wrap .only_mo{
+    display: none;
+}
+
+.board_wrap .my_form_wrap .my_form_inner .basic_info_conts{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.board_wrap .my_form_wrap .my_form_inner .basic_info_conts .info_box{
+    padding-right: 60px;
+    width: calc( 100% - 256px);
+    box-sizing: border-box;
+}
+.board_wrap .my_form_wrap .my_form_inner .tit{
+    padding-bottom: 6px;
+    font-weight: 500;
+    font-size: 18px;
+    color:#192c83;
+}
+.board_wrap .my_form_wrap .my_form_inner .basic_info_conts .info_box .info_line{
+    padding:0 0 25px;
+    width: 100%;
+}
+.board_wrap .my_form_wrap .my_form_inner .basic_info_conts .info_box .info_line.column_line{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.board_wrap .my_form_wrap .my_form_inner .basic_info_conts .info_box .info_line.column_line .col{
+    width: calc( ( 100% - 40px ) / 2 );
+}
+.board_wrap .my_form_wrap .my_form_inner .basic_info_conts .img_box{
+    width: 256px;
+}
+
+.board_wrap .my_form_wrap .my_form_inner .basic_info_conts .img_box .col.top{
+    padding-bottom: 40px;
+}
+.board_wrap .my_form_wrap .my_form_inner .basic_info_conts .img_box .col.top img{
+    height: 100%;
+}
+.board_wrap .my_form_wrap .my_form_inner .basic_info_conts .img_box .col.btm img{
+    max-width: fit-content;
+    width: 100%;
+}
+.board_wrap .my_form_wrap .my_form_inner .basic_info_conts .img_box .preview_img_outer{
+    padding:10px;
+    width: 100%;
+    height: 265px;
+    border:1px solid #d9d9d9;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+.board_wrap .my_form_wrap .my_form_inner .basic_info_conts .img_box .preview_img_outer .preview_img_inner{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background: #eee;
+}
+.board_wrap .my_form_wrap .my_form_inner .basic_info_conts .img_box .btn_upload{
+    padding-top: 4px;
+}
+.board_wrap .my_form_wrap .my_form_inner .basic_info_conts .img_box .btn_upload input[type="file"]{
+    display: none;
+}
+.board_wrap .my_form_wrap .my_form_inner .basic_info_conts .img_box .btn_upload input[type="file"] + label{
+    display: block;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: #222;
+    background: #eee;
+    border:1px solid #535353;
+    border-radius: 6px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.board_wrap .my_form_wrap .my_form_inner .basic_info_conts .img_box .btn_upload input[type="file"] + label span{
+    position: relative;
+    padding-left: 22px;
+    font-size: 13px;
+    color: #535353;
+}
+.board_wrap .my_form_wrap .my_form_inner .basic_info_conts .img_box .btn_upload input[type="file"] + label span::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 49%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    background: url("/imgs/ico_btn_upload.png") no-repeat center/cover;
+}
+
+
+
+
+
+
+.board_wrap .my_form_wrap .my_form_inner .academic_info_conts .acd_conts{}
+.board_wrap .my_form_wrap .my_form_inner .academic_info_conts .acd_conts ul{}
+.board_wrap .my_form_wrap .my_form_inner .academic_info_conts .acd_conts ul li{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-bottom: 10px;
+}
+.board_wrap .my_form_wrap .my_form_inner .academic_info_conts .acd_conts ul li .lt{
+    width: 380px;
+}
+.board_wrap .my_form_wrap .my_form_inner .academic_info_conts .acd_conts ul li .rt{
+    padding-left: 30px;
+    width: calc( 100% - 380px);
+    box-sizing: border-box;
+}
+.board_wrap .my_form_wrap .my_form_inner .academic_info_conts .acd_conts ul li .col{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.board_wrap .my_form_wrap .my_form_inner .academic_info_conts .acd_conts ul li .col p{
+    width: calc( ( 100% - 20px ) / 2 );
+}
+.board_wrap .my_form_wrap .my_form_inner .academic_info_conts .acd_conts ul li .col em{
+    width: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+.board_wrap .my_form_wrap .my_form_inner .academic_info_conts .acd_conts ul li.first p{
+    padding-bottom: 6px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #192c83;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_box{
+    padding-bottom: 70px;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_box.last{
+    padding-bottom: 0;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_box .editor_set_wrap{
+    width: 100%;
+    height: 300px;
+    border:1px solid #d1d1d1;
+    box-sizing: border-box;
+}
+
+
+
+
+
+.board_wrap .my_form_wrap .my_form_inner .form_btn_box{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 70px;
+    width: 100%;
+}
+.board_wrap .my_form_wrap .my_form_inner .btn{
+    display: inline-block;
+    margin-left: 10px;
+    width: 120px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    background: #bfbfbf;
+    border-radius: 8px;
+}
+.board_wrap .my_form_wrap .my_form_inner .btn_wide{
+    width: 300px;
+    background-color: #192c83;
+}
+
+
+
+
+
+/* 연구목록 */
+
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 50px 0 0;
+    box-sizing: border-box;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box{
+    
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box.left{
+    width: 100%;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box.left.short{
+    width: calc( 100% - 540px );
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box.right{
+    display: none;
+    width: 460px;
+}   
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box.right.on{
+    display: block;
+}
+
+
+
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .btn_wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .btn_wrap.top{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .btn_wrap.top > p{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .btn_wrap.top .btn{
+    margin-left: 0;
+    padding:0 15px;
+    width: auto;
+    height: 42px;
+    line-height: 42px;
+    color: #222;
+    box-sizing: border-box;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .btn_wrap.top .btn.btn_excel{
+    background:#f0fdf0;
+    border:1px solid #2a7e28;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .btn_wrap.top .btn.btn_pure{
+    margin-left: 6px;
+    background:#f0f3f8;
+    border:1px solid #192c83;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .btn_wrap.top .btn.btn_add{
+    color: #fff;
+    background:#192c83;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .btn_wrap.top .btn span{
+    position: relative;
+    padding-left: 25px;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .btn_wrap.top .btn span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .btn_wrap.top .btn.btn_add span{
+    padding-left: 27px;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .btn_wrap.top .btn.btn_excel span::after{
+    background: url("./imgs/ico_btn_excel.png") no-repeat center/cover;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .btn_wrap.top .btn.btn_pure span::after{
+    background: url("./imgs/icon_btn_pure.png") no-repeat center/cover;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .btn_wrap.top .btn.btn_add span::after{
+    width: 20px;
+    height: 15px;
+    background: url("./imgs/ico_add_list.png") no-repeat center/cover;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w{
+    padding-top: 45px;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .filter_box{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .filter_box .ft_chk_refer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .filter_box .ft_chk_refer img{
+    width: 22px;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .filter_box .ft_chk_refer span{
+    padding-left: 6px;
+    letter-spacing: -0.6px;
+    font-size: 15px;
+    color: #192c83;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .ft_chk span input[type="checkbox"]{
+    display: none;
+}
+
+
+
+
+
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .ft_chk span input[type="checkbox"] + label{
+    position: relative;
+    padding-left: 30px;
+    letter-spacing: -0.6px;
+    font-size: 15px;
+    color: #192c83;
+}
+
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .ft_chk span input[type="checkbox"]+ label:before{
+    display: none;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .ft_chk span input[type="checkbox"] + label::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 22px;
+    height: 22px;
+    background:url("./imgs/ico_chk_default.png") no-repeat center/cover;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .ft_chk span input[type="checkbox"]:checked + label:after{
+    background:url("./imgs/ico_chk_active.png") no-repeat center/cover;
+}
+
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .filter_box .ft_sel{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: auto;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .filter_box .ft_sel span{
+    margin-left: 30px;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .filter_box .ft_sel span label{
+    letter-spacing: -0.6px;
+    font-size: 15px;
+    color: #222;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .filter_box .ft_sel span select{
+    padding: 0 0 0 10px;
+    min-width: 90px;
+    height: 33px;
+    font-family:"Roboto", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", sans-serif;
+    font-size: 15px;
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background:url("./imgs/ico_select_arw.png") no-repeat 90% 50%/11px 7px;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .filter_box .ft_sel span select{
+    -moz-appearance:none;
+    -webkit-appearance:none; 
+    appearance:none;
+}
+
+
+
+
+
+
+
+
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list{
+    position: relative;
+    width: 100%;
+    list-style-type: none;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-bottom: 8px;
+    padding: 10px 10px 10px 15px;
+    width: 100%;
+    height: auto;
+    background:#f0f3f8;
+    border:none;
+    border-radius: 8px;
+    box-sizing:border-box;
+    cursor: pointer;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li.modify{
+    outline:2px solid #192c83;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li.ui-state-highlight { 
+    position: relative;
+    padding: 0 !important;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    height: 1px !important;  
+    line-height: 1px !important; 
+    background-color: transparent;
+    border:none;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li.ui-state-highlight::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 1px;
+    width: 100%;
+    height: 1px;
+    line-height: 1px;
+    background:#192c83;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .ft_chk{
+    margin-top: 8px;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .ft_chk span{
+    vertical-align: top;
+    display: inline-block;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .ft_chk span input[type="checkbox"] + label{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 33px;
+    height: 33px;
+    vertical-align: top;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .ft_chk span input[type="checkbox"] + label::after{
+    width: 33px;
+    height: 33px;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .rsh_txt{
+    padding: 7px 28px 0 10px;
+    width:calc(100% - 19px);
+    letter-spacing: -0.3px;
+    box-sizing: border-box;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .rsh_txt .top{
+    position: relative;
+    padding-top: 8px;
+    padding-bottom: 18px;
+    box-sizing: border-box;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .rsh_txt .top p{
+    text-overflow:ellipsis;
+    overflow:hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    font-weight: 700;
+    color: #222;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .rsh_txt .detail{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .rsh_txt .detail span:nth-child(1){
+    position: relative;
+    padding-right: 20px;
+    width: 170px;
+    box-sizing: border-box;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .rsh_txt .detail span:nth-child(1)::after{
+    content:"";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 14px;
+    background:#d9d9d9;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .rsh_txt .detail span:nth-child(2){
+    margin-right: auto;
+    padding:0 50px 0 20px;
+    width: calc( 100% - 280px );
+    box-sizing: border-box;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .rsh_txt .detail span:nth-child(3){
+    position: relative;
+    padding-left: 15px;
+    width: 110px;
+    box-sizing: border-box;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .rsh_txt .detail span:nth-child(3)::before{
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 14px;
+    background:#d9d9d9;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .rsh_active{
+    display: flex;
+    flex-direction: column;
+    padding: 8px 6px;
+    width: 76px;
+    background:#fff;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .rsh_active strong{
+    display: inline-block;
+    margin-bottom: 6px;
+    width: 64px;
+    height: 35px;
+    font-size: 0;
+    background:#eee url("./imgs/ico_order_change.png") no-repeat center/20px 9px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .btn_toggle_box {
+    display: inline-block;
+    cursor: pointer;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .btn_toggle_box input[type="checkbox"] {
+    display: none;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .btn_toggle_box .btn_toggle{
+    overflow: hidden;
+    position: relative;
+    display: block;
+    width: 64px;
+    height: 35px;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 20px;
+    box-sizing: border-box;
+    transition: background-color 0.2s;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .btn_toggle_box .btn_toggle .handle {
+    position: absolute;
+    left: 7px;
+    transform: translateY(-50%);
+    top: 50%;
+    width: 23px;
+    height: 23px;
+    background: #c9c9c9;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .btn_toggle_box .btn_toggle::after,
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .btn_toggle_box .btn_toggle::before{
+    content: "OFF";
+    position: absolute;
+    transform: translateY(-50%);
+    top: 54%;
+    right: 7px;
+    font-weight: 300;
+    font-size: 12px;
+    color: #222;
+    line-height: 0;
+    letter-spacing: 0;
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+
+
+
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .btn_toggle_box .btn_toggle::before {
+    transition: opacity 0.2s;
+    content: "ON";
+    left: 8px;
+    color: #fff;
+    opacity: 0;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .btn_toggle_box input[type="checkbox"]:checked ~ .btn_toggle {
+    background: #192c83;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .btn_toggle_box input[type="checkbox"]:checked ~ .btn_toggle .handle {
+    left: 33px;
+    background: #fff;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .btn_toggle_box input[type="checkbox"]:checked ~ .btn_toggle::after {
+    opacity: 0;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .btn_toggle_box input[type="checkbox"]:checked ~ .btn_toggle::before {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .btn_wrap.btm{
+    justify-content: flex-end;
+    
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .btn_wrap.btm .btn{
+    padding: 0 20px;
+    width: auto;
+    height: 42px;
+    line-height: 42px;
+    color: #fff;
+    background:#192c83;
+}
+
+
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box.right .btn_wrap .btn{
+    margin-left: 8px;
+}
+
+
+
+
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box.right ul li{
+    padding-bottom: 30px;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box.right textarea{
+    resize: none;
+    padding: 10px;
+    width: 100%;
+    height: 130px;
+    vertical-align: top;
+    letter-spacing: -0.8px;
+    font-family:"Roboto", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", sans-serif;
+    font-size: 16px;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box.right h4{
+    padding-top: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box.right .btn_wrap{
+    justify-content: flex-end;
+    padding-top: 20px;
+}
+
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .btn_wrap .btn.cancel{
+    width: 78px;
+}
+
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .btn_wrap .btn.add{
+    background: #042e85;
+}
+
+
+
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .btn_wrap .btn.delete{
+    margin-left: 0;
+    margin-right: auto;
+    font-size: 0;
+    width: 52px;
+    height: 52px;
+    background: #bfbfbf url("./imgs/ico_del.png") no-repeat center/20px;
+}
+
+
+
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box.right .date_inner{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box.right .date_inner .input_date {
+    position: relative;
+    width: calc( (100% - 20px) / 2 );
+    height: 50px;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box.right .date_inner .input_date input{
+    padding: 0 15px;
+    width: 100%;
+    height: 100%;
+    letter-spacing: -0.2px;
+    font-family:"Roboto", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", sans-serif;
+    font-size: 16px;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box.right .date_inner .input_date input::placeholder{
+    color: #dcdcdc;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box.right .date_inner .dash{
+    width:20px;
+    text-align: center;
+    font-size: 16px;
+    color: #222;
+}
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 1520px) {
+
+}
+
+
+
+
+@media all and (max-width: 1420px) {
+
+
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap{
+        padding:50px 10px 0;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box.left.short{
+        width: calc( 100% - 440px );
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box.right.on{
+        width: 400px;
+    }   
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+@media all and (max-width: 1280px) {
+
+    
+
+
+
+
+
+
+    .board_wrap .reserach_table_outer .reserach_table tr th:nth-child(1){
+        width: 45%;
+    }
+    .board_wrap .reserach_table_outer .reserach_table tr th:nth-child(2){
+        width: 15%;
+    }
+    .board_wrap .reserach_table_outer .reserach_table tr th:nth-child(3){
+        width: 25%;
+    }
+    .board_wrap .reserach_table_outer .reserach_table tr th:nth-child(4){
+        width: 15%;
+    }
+
+
+
+
+
+
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box.left.short{
+        width: calc( 100% - 340px );
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box.right.on{
+        width: 300px;
+    }   
+    
+
+
+
+}
+
+
+
+
+
+@media all and (max-width: 1023px) {
+
+    #header,
+    #lnb_wrap,
+    #footer{
+        z-index: 4;
+    }
+    .class_tab{
+        margin:35px 0;
+    }
+    .class_tab ul{
+        width: 100%;
+        border-radius: 5px;
+    }
+    .class_tab ul li{
+        width: 50%;
+    }
+    .class_tab ul li a{
+        width: 100%;
+        padding:8px 0;
+        text-align: center;
+        font-size: 14px;
+    }
+    .class_tab ul li.on a{
+        font-weight: 500;
+    }
+    .board_wrap .reserach_table_outer h4{
+        height: 35px;
+        font-size: 18px;
+        line-height: 18px;
+    }
+    .board_wrap .reserach_table_outer .reserach_table_box{
+        margin: 30px 0 0;
+        overflow-y: auto;
+        width: 100%;
+        transform:rotateX(180deg);
+        -ms-transform:rotateX(180deg);
+        -webkit-transform:rotateX(180deg); 
+    }
+    .board_wrap .reserach_table_outer .reserach_table_box::-webkit-scrollbar {
+        height:4px;
+    }
+    .board_wrap .reserach_table_outer .reserach_table_box::-webkit-scrollbar-track {
+        background-color: #dcdcdc;
+        border-radius: 2px;
+    }
+    .board_wrap .reserach_table_outer .reserach_table_box::-webkit-scrollbar-thumb { 
+        background-color: #222;
+        border-radius: 2px;
+    }
+    .board_wrap .reserach_table_outer .reserach_table_box::-webkit-scrollbar-button {
+        display: none;
+    }
+    .board_wrap .reserach_table_outer .reserach_table_box .reserach_table{
+        width: 100%;
+        transform:rotateX(180deg);
+        -ms-transform:rotateX(180deg);
+        -webkit-transform:rotateX(180deg); 
+    }
+    .board_wrap .reserach_table_outer .reserach_table tr th{
+        padding:13px 0 10px 10px;
+        font-size: 14px;
+        color: #042e85;
+    }
+
+    .board_wrap .reserach_table_outer .reserach_table tr td{
+        line-height: 1.3;
+        font-size: 14px;
+    }
+    .board_wrap .reserach_table_outer .reserach_table tr td{
+        padding: 14px 15px 14px 10px;
+    }
+    .board_wrap .reserach_table_outer .reserach_table tr td:nth-child(1){
+        padding-right: 15px;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .btn.btn_top_modify{
+        position: absolute;
+        top: -18px;
+        right: 0;
+        width: 65px;
+        height: 36px;
+        line-height: 36px;
+        font-size: 15px;
+        background: #192c83;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    .board_wrap .my_form_wrap h4{
+        margin:0 0 30px;
+        padding:8px 0 10px;
+        font-size: 17px;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .basic_info_conts{
+        flex-direction: column;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .basic_info_conts .info_box{
+        padding-right: 0;
+        width: 100%;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .tit{
+        padding-bottom: 8px;
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .board_wrap .my_form_wrap .input_box{
+        height: 42px;
+    }
+    .board_wrap .my_form_wrap .input_box input {
+        padding: 0 10px;
+        width: 100%;
+        height: 100%;
+        letter-spacing: -0.8px;
+        font-size: 14px;
+        border-radius: 5px;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .basic_info_conts .info_box .info_line{
+        padding-bottom: 18px;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .basic_info_conts .info_box .info_line.column_line .col.lt{
+        width: 140px;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .basic_info_conts .info_box .info_line.column_line .col.rt{
+        width: calc( 100% - 150px );
+    }
+    .board_wrap .my_form_wrap .my_form_inner .basic_info_conts .info_box .info_line.column_line.office .col.lt{
+        width: 100%;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .basic_info_conts .info_box .info_line.column_line.office .col.rt{
+        width: 0%;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .basic_info_conts .info_box .info_line.column_line.major{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .basic_info_conts .info_box .info_line.column_line.major .col.lt{
+        padding-bottom: 18px;
+        width: 100%;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .basic_info_conts .info_box .info_line.column_line.major .col.rt{
+        padding-left: 0;
+        width: 100%;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .basic_info_conts .info_box .info_line.column_line.degree .col.lt{
+        width: 100%;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .basic_info_conts .info_box .info_line.column_line.degree .col.rt{
+        width: 0;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .basic_info_conts .info_box .info_line.column_line.lang{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .basic_info_conts .info_box .info_line.column_line.lang .col.lt{
+        padding-bottom: 18px;
+        width: 100%;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .basic_info_conts .info_box .info_line.column_line.lang .col.rt{
+        padding-left: 0;
+        width: 100%;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .basic_info_conts .info_box .info_line.column_line.contact{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .basic_info_conts .info_box .info_line.column_line.contact .col.lt{
+        padding-bottom: 18px;
+        width: 100%;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .basic_info_conts .info_box .info_line.column_line.contact .col.rt{
+        padding-left: 0;
+        width: 100%;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .basic_info_conts .img_box{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .basic_info_conts .img_box .col{
+        width: calc( ( 100% - 10px ) / 2 );
+    }
+    .board_wrap .my_form_wrap .my_form_inner .basic_info_conts .img_box .col.top{
+        padding-bottom: 0;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .basic_info_conts .img_box .col.btm{
+        margin-left: 10px;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .basic_info_conts .img_box .preview_img_outer{
+        padding: 5px;
+        height: 180px;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .basic_info_conts .img_box .col.btm img{
+        max-width: fit-content;
+        width: initial;
+        height: 100%;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .basic_info_conts .img_box .btn_upload input[type="file"] + label{
+        padding: 7px 0 8px;
+        background:#535353;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .basic_info_conts .img_box .btn_upload input[type="file"] + label span{
+        font-size: 12px;
+        color:#fff;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .basic_info_conts .img_box .btn_upload input[type="file"] + label span::before {
+        background: url("./imgs/ico_btn_upload_w.png") no-repeat center / cover;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .academic_info_conts{
+        padding-top: 40px;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .academic_info_conts h4{
+        margin-bottom: 24px;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .academic_info_conts .acd_conts ul li{
+        padding-bottom:5px;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .academic_info_conts .acd_conts ul li.first{
+        padding-bottom: 0;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .academic_info_conts .acd_conts ul li.first p {
+        padding-bottom: 8px;
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .academic_info_conts .acd_conts ul li .col p {
+        width: calc((100% - 10px) / 2);
+    }
+    .board_wrap .my_form_wrap .my_form_inner .academic_info_conts .acd_conts ul li .col.lt{
+        width: 130px;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .academic_info_conts .acd_conts ul li .col.lt .input_box input{
+        padding:0 6px;
+        text-align: center;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .academic_info_conts .acd_conts ul li .rt {
+        padding-left: 20px;
+        width: calc(100% - 130px);
+        box-sizing: border-box;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .form_btn_box{
+        padding-top: 60px;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .form_btn_box .btn_wide {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .form_btn_box .btn.btn_cancel{
+        margin-left: 0;
+        width: calc( 30% - 10px);
+    }
+    .board_wrap .my_form_wrap .my_form_inner .form_btn_box .btn.btn_wide.btn_save{
+        margin-left: 10px;
+        width: 70%;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_box .editor_set_wrap{
+        height: 500px;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_box{
+        padding-bottom: 50px;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap{
+        padding: 0;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .btn_wrap.top{
+        border-bottom: none;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .btn_wrap.top .btn{
+        padding: 0 8px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .btn_wrap.top .btn.btn_pure{
+        margin-left: 5px;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .btn_wrap.top .btn span{
+        padding-left: 20px;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .btn_wrap.top .btn span::after{
+        width: 14px;
+        height: 14px;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w{
+        padding-top: 15px;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .filter_box{
+        flex-direction: column;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .filter_box .ft_chk_refer{
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        width: 100%;
+        border-bottom: 1px solid #e5e5e5;
+        box-sizing: border-box;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .filter_box .ft_chk_refer img{
+        width: 16px;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .filter_box .ft_chk_refer span{
+        padding-left: 4px;
+        font-size: 13px;
+        
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .filter_box .ft_sel span label{
+        font-size: 13px;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .filter_box .ft_sel span{
+        margin-left: 10px;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .filter_box .ft_sel span select{
+        padding: 0 0 0 5px;
+        min-width: 66px;
+        height: 25px;
+        font-size: 12px;
+        border-radius: 3px;
+        background-size: 8px 5px;
+    }
+    #view_num{
+        min-width: 48px;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .btn_wrap.top .btn.btn_add span::after{
+        left: 2px;
+        width: 14px;
+        height: 11px;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .btn_wrap.top .btn.btn_add span{
+        padding-left: 20px;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box.right.on{
+        position: fixed;
+        left: 0;
+        top: 0;
+        right:0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background:rgba(0,0,0,0.7);
+        z-index: 9999;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box.right.on .rsh_box_inner{
+        position: absolute;
+        left: 50%;
+        top: 20px;
+        padding:20px 20px 40px;
+        width: 95%;
+        transform: translate(-50%,0);
+        background: #fff;
+        box-sizing: border-box;
+        z-index: 10000;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box.right.on .rsh_box_inner .btn_popup_close{
+        position:absolute;
+        right: 22px;
+        top: 24px;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        font-size:0;
+        background:url("./imgs/ico_popup_close.png") no-repeat center/cover;
+        cursor: pointer;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box.left.short {
+        width: 100%;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box.right h4{
+        margin: 0 0 5px;
+        padding-top: 0;
+        font-size: 22px;
+        border-bottom: none;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box.right ul li{
+        padding-bottom: 20px;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box.right ul li .tit{
+        padding-bottom: 5px;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box.right textarea{
+        font-size: 14px;
+        height: 100px;
+        border-radius: 5px;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box.right .btn_wrap{
+        justify-content: space-between;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box.right .btn_wrap .btn{
+        margin-left: 5px;
+        border-radius: 4px;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .btn_wrap .btn.cancel{
+        margin-left: 0;
+        width: 25%;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .btn_wrap .btn.add{
+        width: calc( 75% - 5px);
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .btn_wrap.three .btn.delete{
+        margin-left: 0;
+        width: 40px;
+        height: 40px;
+        background-size: 16px 16px;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .btn_wrap.three .btn.cancel{
+        margin-left: 5px;
+        width: calc( 35% - 55px);
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .btn_wrap.three .btn.add{
+        width: calc( 60% - 5px);
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li{
+        padding: 10px;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .ft_chk{
+        margin-top: 0;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .ft_chk span input[type="checkbox"] + label{
+        width: 23px;
+        height: 23px;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .ft_chk span input[type="checkbox"] + label::after{
+        width: 23px;
+        height: 23px;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .rsh_txt{
+        padding: 4px 20px 0 8px;
+        width: calc(100% - 78px);
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .rsh_txt .top{
+        padding-top: 0;
+        padding-bottom: 15px;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .rsh_txt .top p{
+        font-size: 15px;
+        -webkit-line-clamp: initial;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .rsh_txt .detail{
+        flex-direction: column;
+        padding-bottom: 4px;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .rsh_txt .detail span{
+        line-height: 1.0;
+        font-size: 14px;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .rsh_txt .detail span:nth-child(1){
+        padding:0 10px 8px 0;
+        width: 100%;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .rsh_txt .detail span:nth-child(1)::after{
+        display: none;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .rsh_txt .detail span:nth-child(2){
+        margin-left: 0;
+        padding:0 10px 8px 0;
+        width: 100%;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .rsh_txt .detail span:nth-child(3){
+        padding:0 10px 0 0;
+        width: 100%;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .rsh_txt .detail span:nth-child(3)::before{
+        display: none;
+    }
+
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .rsh_active{
+        width: 55px;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .rsh_active strong{
+        width: 100%;
+        height: 22px;
+        background-size: 17.5px 8px;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .btn_toggle_box .btn_toggle{
+        width: 100%;
+        height: 22px;
+        border-radius: 14px;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .btn_toggle_box .btn_toggle .handle {
+        position: absolute;
+        left: 2px;
+        transform: translateY(-50%);
+        top: 50%;
+        width: 14px;
+        height: 14px;
+        background: #c9c9c9;
+        border-radius: 50%;
+        transition: 0.2s;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .btn_toggle_box .btn_toggle::after,
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .btn_toggle_box .btn_toggle::before{
+        transform: translateY(-50%);
+        top: 54%;
+        right: 4px;
+        font-size: 11px;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .btn_toggle_box .btn_toggle::before {
+        left: 6px;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .btn_toggle_box input[type="checkbox"]:checked ~ .btn_toggle .handle{
+        left: 25px;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .btn_wrap.btm .btn{
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+        padding: 0 10px;
+        border-radius: 5px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+@media all and (max-width: 730px) {
+
+    .board_wrap .reserach_table_outer .reserach_table_box .reserach_table{
+        width: 720px;
+    }
+    .board_wrap .reserach_table_outer .reserach_table tr th:nth-child(1){
+        width: 40%;
+    }
+    .board_wrap .reserach_table_outer .reserach_table tr th:nth-child(3) {
+        width: 30%;
+    }
+
+
+
+
+
+
+
+
+    
+}
+
+
+
+
+
+
+
+@media all and (max-width: 540px) {
+    .board_wrap .my_form_wrap .my_form_inner .basic_info_conts .img_box .col.btm img {
+        max-width: initial;
+        width: 100%;
+        height: initial;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

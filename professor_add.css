@@ -141,6 +141,9 @@
 .board_wrap .my_form_wrap .only_mo{
     display: none;
 }
+.board_wrap .my_form_wrap .my_form_inner .btn.btn_top_modify{
+    display: none;
+}
 .board_wrap .my_form_wrap .my_form_inner .basic_info_conts{
     display: flex;
     align-items: flex-start;
@@ -873,6 +876,7 @@
         padding-right: 15px;
     }
     .board_wrap .my_form_wrap .my_form_inner .btn.btn_top_modify{
+        display: block;
         position: absolute;
         top: -18px;
         right: 0;

@@ -14,4 +14,28 @@
 기존 /ko/res/css/professor.css 파일 가장아래에 첨부한 professor_add.css 소스 추가 요청드립니다.
 
 
+***** HTML 파일 *****
+
+1. 교실소개(탭메뉴만 추가됨)
+/00_01_classroom_intro.html
+
+2. 교수소개(탭메뉴만 추가됨)
+/00_02_professor_intro.html
+
+3. 마이페이지 - 기본정보
+/01_01_my_basic_info.html
+
+4. 마이페이지 - 기본정보수정
+/01_02_my_basic_info.html
+
+5. 마이페이지 - 연구분야/방법
+/02_my_study_area.html
+
+6. 마이페이지 - 연구목록
+/03_my_study_list.html
+
+7. 마이페이지 - 학술발표
+/04_my_academic.html
+
+
 

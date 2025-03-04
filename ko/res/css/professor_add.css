@@ -567,8 +567,7 @@
     content:"";
     position: absolute;
     right: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 4px;
     width: 1px;
     height: 14px;
     background:#d9d9d9;
@@ -576,21 +575,36 @@
 .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .rsh_txt .detail span:nth-child(2){
     margin-right: auto;
     padding:0 50px 0 20px;
-    width: calc( 100% - 280px );
+    width: auto;
+    /*width: calc( 100% - 390px );*/
     box-sizing: border-box;
 }
-.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .rsh_txt .detail span:nth-child(3){
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .rsh_txt .detail span.num{
+    position: relative;
+    padding:0 15px;
+    width: 140px;
+    box-sizing: border-box;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .rsh_txt .detail span.num::before{
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 1px;
+    height: 14px;
+    background:#d9d9d9;
+}
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .rsh_txt .detail span.date{
     position: relative;
     padding-left: 15px;
     width: 110px;
     box-sizing: border-box;
 }
-.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .rsh_txt .detail span:nth-child(3)::before{
+.board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .rsh_list li .rsh_txt .detail span.date::before{
     content:"";
     position: absolute;
     left: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 4px;
     width: 1px;
     height: 14px;
     background:#d9d9d9;

@@ -409,9 +409,9 @@
                 <div class="swiper-container snbSwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide"><a href="01_01_my_basic_info.html" title="기본정보"><span class="text">기본정보</span></a></div>
-                        <div class="swiper-slide on"><a href="02_my_study_area.html" title="연구분야/방법"><span class="text">연구분야/방법</span></a></div>
+                        <div class="swiper-slide"><a href="02_my_study_area.html" title="연구분야/방법"><span class="text">연구분야/방법</span></a></div>
                         <div class="swiper-slide"><a href="03_my_study_list.html" title="연구목록"><span class="text">연구목록</span></a></div>
-                        <div class="swiper-slide"><a href="04_my_patent.html" title="특허"><span class="text">특허</span></a></div>
+                        <div class="swiper-slide on"><a href="04_my_patent.html" title="특허"><span class="text">특허</span></a></div>
                         <div class="swiper-slide"><a href="05_my_academic.html" title="학술발표"><span class="text">학술발표</span></a></div>
                     </div>
                 </div>
@@ -1142,45 +1142,289 @@
                         </script>
 
                         <div class="my_form_wrap">
-
                             <div class="my_form_inner">
 
-                                <div class="research_box">
-                                    <h4>Current Research Interests</h4>
-                                    <div class="editor_set_wrap">
-                                        <div>
-                                            에디터 영역
-                                        </div>
-                                    </div><!-- //editor_set_wrap -->
-                                </div><!-- //research_box -->
-                                
-                                <div class="research_box last">
-                                    <h4>Research Methodology</h4>
-                                    <div class="editor_set_wrap">
-                                        <div>
-                                            에디터 영역
-                                        </div>
-                                    </div><!-- //editor_set_wrap -->
-                                </div><!-- //research_box -->
-                                
-                                <div class="form_btn_box">
-                                    <a href="#" class="btn btn_cancel">취소</a>
-                                    <a href="#" class="btn btn_wide btn_save">저장</a>
-                                </div><!-- //form_btn_box -->
-                                
-                            </div><!-- //my_form_inner -->
+                                <div class="research_list_wrap">
+                                    
+                                    <div class="rsh_box left">
+                                        <div class="btn_wrap top">
+                                            <p>
+                                                <a href="#" class="btn btn_excel"><span>엑셀 다운로드</span></a>
+                                                <a href="#" class="btn btn_pure"><span>PURE 업로드</span></a>
+                                            </p>
+                                            <a href="#" class="btn btn_add"><span>추가하기</span></a>
+                                        </div><!-- //btn_wrap -->
+                                        <div class="rsh_list_w">
+                                            <div class="filter_box">
+                                                <p class="ft_chk_refer">
+                                                    <img src="/ko/res/images/mypage/ico_chk_active.png" alt="체크박스">
+                                                    <span>: 교실소개에 노출, 최대 2편 선택</span>
+                                                </p><!-- //ft_chk_refer -->
+                                                <p class="ft_sel">
+                                                    <span>
+                                                        <label for="view_num">화면표시 수</label>
+                                                        <select name="view_num" id="view_num">
+                                                            <option value="">10</option>
+                                                            <option value="">30</option>
+                                                            <option value="">50</option>
+                                                            <option value="">100</option>
+                                                        </select>
+                                                    </span>
+                                                    <span>
+                                                        <label for="rsh_sort">정렬</label>
+                                                        <select name="rsh_sort" id="rsh_sort">
+                                                            <option value="">발간일</option>
+                                                            <option value="">제1저자</option>
+                                                        </select>
+                                                    </span>
+                                                </p><!-- //ft_sel -->
+                                            </div><!-- //filter_box -->
+                                            <ul class="rsh_list" id="sortable">
+                                                <li class="ui-state-default">
+                                                    <div class="ft_chk">
+                                                        <span>
+                                                            <input type="checkbox" id="rsh_chk1">
+                                                            <label for="rsh_chk1"></label>
+                                                        </span>
+                                                    </div><!-- //ft_chk -->
+                                                    <div class="rsh_txt">
+                                                        <div class="top"><p>Bone Regeneration of Blood-derived Stem Cells within Dental Imp</p></div>
+                                                        <div class="detail">
+                                                            <span>Ji-Man Park​</span>
+                                                            <span>Journal of Advanced Prosthodontics​</span>
+                                                            <span class="date">2024-09-15​</span>
+                                                        </div>
+                                                    </div><!-- //rsh_txt -->
+                                                    <div class="rsh_active">
+                                                        <strong title="순서변경">순서변경 아이콘</strong>
+                                                        <label class="btn_toggle_box">
+                                                            <input type="checkbox">
+                                                            <span class="btn_toggle">
+                                                                <span class="handle"></span>
+                                                            </span>
+                                                        </label>
+                                                    </div><!-- //rsh_active -->
+                                                </li>
+                                                <li class="ui-state-default">
+                                                    <div class="ft_chk">
+                                                        <span>
+                                                            <input type="checkbox" id="rsh_chk1">
+                                                            <label for="rsh_chk1"></label>
+                                                        </span>
+                                                    </div><!-- //ft_chk -->
+                                                    <div class="rsh_txt">
+                                                        <div class="top"><p>3D printing of resin material for denture artificial teeth​</p></div>
+                                                        <div class="detail">
+                                                            <span>Ji-Man Park​</span>
+                                                            <span>Materials​​</span>
+                                                            <span class="date">2022-07-21​​</span>
+                                                        </div>
+                                                    </div><!-- //rsh_txt -->
+                                                    <div class="rsh_active">
+                                                        <strong title="순서변경">순서변경 아이콘</strong>
+                                                        <label class="btn_toggle_box">
+                                                            <input type="checkbox">
+                                                            <span class="btn_toggle">
+                                                                <span class="handle"></span>
+                                                            </span>
+                                                        </label>
+                                                    </div><!-- //rsh_active -->
+                                                </li>
+                                                <li class="ui-state-default">
+                                                    <div class="ft_chk">
+                                                        <span>
+                                                            <input type="checkbox" id="rsh_chk1">
+                                                            <label for="rsh_chk1"></label>
+                                                        </span>
+                                                    </div><!-- //ft_chk -->
+                                                    <div class="rsh_txt">
+                                                        <div class="top"><p>33333333333333 Bone Regeneration of Blood-derived Stem Cells within Dental Imp Bone Regeneration of Blood-derived Stem Cells within Dental Imp Bone Regeneration of Blood-derived Stem Cells within Dental Imp</p></div>
+                                                        <div class="detail">
+                                                            <span>Jai-Young Koak, Seong-Kyun Kim, Ji-Man Park​</span>
+                                                            <span>Journal of Advanced Prosthodontics​</span>
+                                                            <span class="date">2024-09-15​</span>
+                                                        </div>
+                                                    </div><!-- //rsh_txt -->
+                                                    <div class="rsh_active">
+                                                        <strong title="순서변경">순서변경 아이콘</strong>
+                                                        <label class="btn_toggle_box">
+                                                            <input type="checkbox">
+                                                            <span class="btn_toggle">
+                                                                <span class="handle"></span>
+                                                            </span>
+                                                        </label>
+                                                    </div><!-- //rsh_active -->
+                                                </li>
+                                                <li class="ui-state-default">
+                                                    <div class="ft_chk">
+                                                        <span>
+                                                            <input type="checkbox" id="rsh_chk1">
+                                                            <label for="rsh_chk1"></label>
+                                                        </span>
+                                                    </div><!-- //ft_chk -->
+                                                    <div class="rsh_txt">
+                                                        <div class="top"><p>444444444444Bone Regeneration of Blood-derived Stem Cells within Dental Imp</p></div>
+                                                        <div class="detail">
+                                                            <span>Ji-Man Park​</span>
+                                                            <span>Journal of Advanced Prosthodontics​</span>
+                                                            <span class="date">2024-09-15​</span>
+                                                        </div>
+                                                    </div><!-- //rsh_txt -->
+                                                    <div class="rsh_active">
+                                                        <strong title="순서변경">순서변경 아이콘</strong>
+                                                        <label class="btn_toggle_box">
+                                                            <input type="checkbox">
+                                                            <span class="btn_toggle">
+                                                                <span class="handle"></span>
+                                                            </span>
+                                                        </label>
+                                                    </div><!-- //rsh_active -->
+                                                </li>
+                                                <li class="ui-state-default">
+                                                    <div class="ft_chk">
+                                                        <span>
+                                                            <input type="checkbox" id="rsh_chk1">
+                                                            <label for="rsh_chk1"></label>
+                                                        </span>
+                                                    </div><!-- //ft_chk -->
+                                                    <div class="rsh_txt">
+                                                        <div class="top"><p>55555555Bone Regeneration of Blood-derived Stem Cells within Dental Imp</p></div>
+                                                        <div class="detail">
+                                                            <span>Ji-Man Park​</span>
+                                                            <span>Journal of Advanced Prosthodontics​</span>
+                                                            <span class="date">2024-09-15​</span>
+                                                        </div>
+                                                    </div><!-- //rsh_txt -->
+                                                    <div class="rsh_active">
+                                                        <strong title="순서변경">순서변경 아이콘</strong>
+                                                        <label class="btn_toggle_box">
+                                                            <input type="checkbox">
+                                                            <span class="btn_toggle">
+                                                                <span class="handle"></span>
+                                                            </span>
+                                                        </label>
+                                                    </div><!-- //rsh_active -->
+                                                </li>
+                                            </ul><!-- //rsh_list -->
+                                        </div><!-- //rsh_list_w -->
+                                        <div class="btn_wrap btm">
+                                            <a href="" class="btn btn_orader"><span>순서저장</span></a>
+                                        </div><!-- //btn_wrap -->
+                                        <div class="pagination">
+                                            <div class="pagination_inner">
+                                                <a href="?pageIndex=1" class="btn_paging pg_first" onclick="fnPage(1);return false; "><span class="blind">처음</span></a>
+                                                <a href="?pageIndex=1" class="btn_paging pg_prev" onclick="fnPage(1);return false; "><span class="blind">이전</span></a>
+                                                <a href="#" class="pg_num on">1</a>
+                                                <a href="?pageIndex=2" class="pg_num" title="2페이지로 이동" onclick="fnPage(2);return false; ">2</a>
+                                                <a href="?pageIndex=3" class="pg_num" title="3페이지로 이동" onclick="fnPage(3);return false; ">3</a>
+                                                <a href="?pageIndex=4" class="pg_num" title="4페이지로 이동" onclick="fnPage(4);return false; ">4</a>
+                                                <a href="?pageIndex=5" class="pg_num" title="5페이지로 이동" onclick="fnPage(5);return false; ">5</a>
+                                                <a href="?pageIndex=6" class="btn_paging pg_next" onclick="fnPage(6);return false; "><span class="blind">다음</span></a>
+                                                <a href="?pageIndex=15" class="btn_paging pg_last" onclick="fnPage(15);return false; "><span class="blind">마지막</span></a>
+                                            </div>
+                                        </div><!-- //pagination -->
+                                    </div><!-- //left -->
 
+                                    <!-- start : 논문 추가 -->
+                                    <div class="rsh_box right add">
+                                        <div class="rsh_box_inner">
+                                            <a href="#" class="only_mo btn_popup_close">닫기</a>
+                                            <h4>특허 추가</h4>
+                                            <ul>
+                                                <li>
+                                                    <p class="tit">특허명</p>
+                                                    <textarea name="" id=""></textarea>
+                                                </li>
+                                                <li>
+                                                    <p class="tit">특허기간</p>
+                                                    <div class="date_inner">
+                                                        <div class="input_date">
+                                                            <input type="text" id="s_date" name="s_date" title="특허기간 검색 시작일" placeholder="YYYY-MM-DD">
+                                                        </div><!-- //input_date -->
+                                                        <div class="dash">~</div>
+                                                        <div class="input_date">
+                                                            <input type="text" id="e_date" name="e_date" title="특허기간 검색 종료일" placeholder="YYYY-MM-DD">
+                                                        </div><!-- //input_date -->
+                                                    </div><!-- //date_inner -->
+                                                </li>
+                                                <li>
+                                                    <p class="tit">특허번호</p>
+                                                    <div class="input_box">
+                                                        <input type="text">
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <p class="tit">특허내용</p>
+                                                    <textarea name="" id=""></textarea>
+                                                </li>
+                                            </ul>
+                                            <div class="btn_wrap">
+                                                <a href="#" class="btn cancel">취소</a>
+                                                <a href="#" class="btn add">추가</a>
+                                            </div><!-- //btn_wrap -->
+                                        </div><!-- //rsh_box_inner -->
+                                    </div><!-- //right -->
+                                    <!-- end : 논문 추가 -->
+
+                                    <!-- start : 논문 수정 -->
+                                    <div class="rsh_box right modify">
+                                        <div class="rsh_box_inner">
+                                            <a href="#" class="only_mo btn_popup_close">닫기</a>
+                                            <h4>특허 수정</h4>
+                                            <ul>
+                                                <li>
+                                                    <p class="tit">특허명</p>
+                                                    <textarea name="" id=""></textarea>
+                                                </li>
+                                                <li>
+                                                    <p class="tit">특허기간</p>
+                                                    <div class="date_inner">
+                                                        <div class="input_date">
+                                                            <input type="text" id="s_date" name="s_date" title="특허기간 검색 시작일" placeholder="YYYY-MM-DD">
+                                                        </div><!-- //input_date -->
+                                                        <div class="dash">~</div>
+                                                        <div class="input_date">
+                                                            <input type="text" id="e_date" name="e_date" title="특허기간 검색 종료일" placeholder="YYYY-MM-DD">
+                                                        </div><!-- //input_date -->
+                                                    </div><!-- //date_inner -->
+                                                </li>
+                                                <li>
+                                                    <p class="tit">특허번호</p>
+                                                    <div class="input_box">
+                                                        <input type="text">
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <p class="tit">특허내용</p>
+                                                    <textarea name="" id=""></textarea>
+                                                </li>
+                                            </ul>
+                                            <div class="btn_wrap three">
+                                                <a href="#" class="btn delete">삭제</a>
+                                                <a href="#" class="btn cancel">취소</a>
+                                                <a href="#" class="btn add">저장</a>
+                                            </div><!-- //btn_wrap -->
+                                        </div><!-- //rsh_box_inner -->
+                                    </div><!-- //right -->
+                                    <!-- end : 논문 수정 -->
+
+                                </div><!-- //research_list_wrap -->
+
+                            </div><!-- //my_form_inner -->
                         </div><!-- //my_form_wrap -->
 
                     </div><!-- //classInfoList -->
                     
-                </div>     
-            </div>
-        </div>
+                </div><!-- //board_wrap -->  
+            </div><!-- //inner_row -->  
+        </div><!-- //contents -->  
 
 
         <script>
             $(function(){
+
+                
+
                 $(window).scroll(function(){
                     var height = $(window).outerHeight(),
                         scroll_height = $(window).scrollTop(),

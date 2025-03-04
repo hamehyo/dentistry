@@ -1,0 +1,17 @@
+
+
+***** JS파일 교체요청 ( 드래그앤드롭 작업을 위해 기존 플러그인에 소스 추가됨) *****
+1)
+기존 head태그에 있는 /ko/res/css/jquery-ui.css 와 /ko/res/js/jquery-ui.js 파일주석 처리후 
+첨부한 폴더에 있는 jquery-ui-update.css 와 jquery-ui-update.js 파일추가 후 파일명 교체 요청드립니다.
+
+2) 
+기존 /ko/res/js/professor.js 파일의 가장 아래에 첨부한 파일에 있는 professor_add.js 소스 추가 요청드립니다ㅏ.
+
+
+***** CSS파일 추가요청 *****
+1) 
+기존 /ko/res/css/professor.css 파일 가장아래에 첨부한 professor_add.css 소스 추가 요청드립니다.
+
+
+

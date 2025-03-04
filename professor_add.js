@@ -1,5 +1,6 @@
 $(function(){
     
+    // ** 마이페이지 관련 스크립트 추가 ** 
 
     // 목록화면 이미지 업로드
     $("#upload_list_file").on("change", function(event) {

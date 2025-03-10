@@ -12,6 +12,63 @@ $(function(){
         reader.readAsDataURL(file);
     });
 
+    // 학력정보 리스트 추가
+    let academic_html = `<li>
+                            <div class="col lt">
+                                <p class="input_box"><input type="text" placeholder="입학년도" ></p>
+                                <em>~</em>
+                                <p class="input_box"> <input type="text"placeholder="졸업년도" ></p>
+                            </div>
+                            <div class="rt">
+                                <p class="txt_box ko"><textarea name="" id="" rows="1" placeholder="학력(국문)"></textarea></p>
+                                <p class="txt_box en"><textarea name="" id="" rows="1" placeholder="학력(영문)"></textarea></p>
+                                <p class="btn_add_list"><span>추가</span></p>
+                            </div>
+                        </li>`;
+    $(document).on("click", ".academic_info_conts .btn_add_list", function(e){
+        $(this).hide();
+        $(this).parents("li").after(academic_html);
+    });
+
+
+    // 경력사항 리스트 추가
+    let career_html = `<li>
+                            <div class="col lt">
+                                <p class="input_box"><input type="text" placeholder="입사일"></p>
+                                <em>~</em>
+                                <p class="input_box"> <input type="text" placeholder="퇴사일"></p>
+                            </div>
+                            <div class="rt">
+                                <p class="txt_box ko"><textarea name="" id="" rows="1" placeholder="경력(국문)"></textarea></p>
+                                <p class="txt_box en"><textarea name="" id="" rows="1" placeholder="경력(영문)"></textarea></p>
+                                <p class="btn_add_list"><span>추가</span></p>
+                            </div>
+                        </li>`;
+    $(document).on("click", ".career_info_conts .btn_add_list", function(e){
+        $(this).hide();
+        $(this).parents("li").after(career_html);
+    });
+
+    // 겸무/보직 리스트 추가
+    let appoint_html = `<li>
+                            <p class="txt_box ko">
+                                <textarea name="" id="" rows="1" placeholder="겸무/보직(국문)"></textarea>
+                            </p>
+                            <p class="txt_box en">
+                                <textarea name="" id="" rows="1" placeholder="겸무/보직(영문)"></textarea>
+                            </p>
+                            <p class="btn_add_list">
+                                <span>추가</span>
+                            </p>
+                        </li>`;
+    $(document).on("click", ".appoint_info_conts .btn_add_list", function(e){
+        $(this).hide(); 
+        $(this).parents("li").after(appoint_html);
+    });
+
+
+
+
 
     // 상세화면 이미지 업로드
     $("#upload_detail_file").on("change", function(event) {

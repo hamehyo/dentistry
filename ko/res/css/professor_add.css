@@ -122,6 +122,16 @@
     letter-spacing: -0.3px;
     color: #bfbfbf;
 }
+.board_wrap .my_form_wrap textarea::placeholder{
+    letter-spacing: -0.3px;
+    color: #bfbfbf;
+}
+.board_wrap .my_form_wrap.read .input_box input::placeholder{
+    color: #f0f3f8;
+}
+.board_wrap .my_form_wrap.read textarea::placeholder{
+    color: #f0f3f8;
+}
 .board_wrap .my_form_wrap .my_form_inner .basic_info_conts{
     display: flex;
     align-items: flex-start;
@@ -236,38 +246,196 @@
     height: 16px;
     background: url("/ko/res/images/mypage/ico_btn_upload.png") no-repeat center/cover;
 }
-.board_wrap .my_form_wrap .my_form_inner .academic_info_conts .acd_conts ul li{
+.board_wrap .my_form_wrap .my_form_inner .term_info_conts{
+    margin:50px 0 0;
+}
+
+.board_wrap .my_form_wrap .my_form_inner .term_info_conts input::placeholder,
+.board_wrap .my_form_wrap .my_form_inner .term_info_conts textarea::placeholder{
+    color: #fff;
+}
+.board_wrap .my_form_wrap.read .my_form_inner .term_info_conts input::placeholder,
+.board_wrap .my_form_wrap.read .my_form_inner .term_info_conts textarea::placeholder{
+    color: #f0f3f8;
+}
+
+.board_wrap .my_form_wrap .my_form_inner .term_info_conts .term_conts .term_tit_box{
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     padding-bottom: 10px;
 }
-.board_wrap .my_form_wrap .my_form_inner .academic_info_conts .acd_conts ul li .lt{
-    width: 380px;
-}
-.board_wrap .my_form_wrap .my_form_inner .academic_info_conts .acd_conts ul li .rt{
-    padding-left: 30px;
-    width: calc( 100% - 380px);
-    box-sizing: border-box;
-}
-.board_wrap .my_form_wrap .my_form_inner .academic_info_conts .acd_conts ul li .col{
+.board_wrap .my_form_wrap .my_form_inner .term_info_conts .term_conts .term_tit_box .box{
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
-.board_wrap .my_form_wrap .my_form_inner .academic_info_conts .acd_conts ul li .col p{
+.board_wrap .my_form_wrap .my_form_inner .term_info_conts .term_conts .term_tit_box .box p{
     width: calc( ( 100% - 20px ) / 2 );
+    font-weight: 500;
+    font-size: 18px;
+    color: #192c83;
 }
-.board_wrap .my_form_wrap .my_form_inner .academic_info_conts .acd_conts ul li .col em{
+.board_wrap .my_form_wrap .my_form_inner .term_info_conts .term_conts .term_tit_box .box em{
     width: 20px;
     text-align: center;
     font-size: 16px;
 }
-.board_wrap .my_form_wrap .my_form_inner .academic_info_conts .acd_conts ul li.first p{
+.board_wrap .my_form_wrap .my_form_inner .term_info_conts .term_conts .term_tit_box .lt{
+    width: 175px;
+}
+.board_wrap .my_form_wrap .my_form_inner .term_info_conts .term_conts .term_tit_box .rt{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 30px;
+    width: calc(100% - 175px);
+    box-sizing: border-box;
+}
+.board_wrap .my_form_wrap .my_form_inner .term_info_conts .term_conts .term_tit_box .rt .ko{
+    width: 40%;
+}
+.board_wrap .my_form_wrap .my_form_inner .term_info_conts .term_conts .term_tit_box .rt .en{
+    margin-left: 4px;
+    width: calc(60% - 58px);
+}            
+.board_wrap .my_form_wrap .my_form_inner .term_info_conts .term_conts ul li .txt_box{
+    position: relative;
+    width: 100%;
+}
+.board_wrap .my_form_wrap .my_form_inner .term_info_conts .term_conts ul li .txt_box::after{
+    display: none;
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 2px;
+    transform: translateX(-50%);
+    width: 96%;
+    height: 15px;
+    background: #fff;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.board_wrap .my_form_wrap.read .my_form_inner .term_info_conts .term_conts ul li .txt_box::after{
+    background: #f0f3f8;
+}
+.board_wrap .my_form_wrap .my_form_inner .term_info_conts .term_conts ul li .txt_box textarea{
+    resize: vertical;
+    /* resize:none; */
+    padding: 15px;
+    width: 100%;
+    min-height: 85px;
+    line-height: 1.2;
+    vertical-align: top;
+    letter-spacing: -0.8px;
+    font-family: "Roboto", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", sans-serif;
+    font-size: 16px;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+.board_wrap .my_form_wrap .my_form_inner .term_info_conts .term_conts ul li .txt_box textarea::-webkit-scrollbar {
+    width: 6px;
+}
+.board_wrap .my_form_wrap .my_form_inner .term_info_conts .term_conts ul li .txt_box textarea::-webkit-scrollbar-thumb {
+    background-color: #a0a5b5;
+}
+.board_wrap .my_form_wrap .my_form_inner .term_info_conts .term_conts ul li .txt_box textarea:read-only{
+    background:#f0f3f8;
+    border: none;
+    color:#a0a5b5;
+}
+.board_wrap .my_form_wrap .my_form_inner .term_info_conts .term_conts ul li{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-bottom: 10px;
+}
+.board_wrap .my_form_wrap .my_form_inner .term_info_conts .term_conts ul li .lt{
+    width: 175px;
+}
+.board_wrap .my_form_wrap .my_form_inner .term_info_conts .term_conts ul li .rt{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 30px;
+    width: calc( 100% - 175px);
+    box-sizing: border-box;
+}
+.board_wrap .my_form_wrap .my_form_inner .term_info_conts .term_conts ul li .rt .ko{
+    width: 40%;
+}
+.board_wrap .my_form_wrap .my_form_inner .term_info_conts .term_conts ul li .rt .en{
+    margin-left: 4px;
+    width:calc( 60% - 58px);
+}
+.board_wrap .my_form_wrap.read .my_form_inner .term_info_conts .term_conts ul li .rt .en{
+    width:calc( 60% - 4px);
+}
+.board_wrap .my_form_wrap .my_form_inner .term_info_conts .term_conts ul li .col{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.board_wrap .my_form_wrap .my_form_inner .term_info_conts .term_conts ul li .col p{
+    width: calc( ( 100% - 20px ) / 2 );
+}
+.board_wrap .my_form_wrap .my_form_inner .term_info_conts .term_conts ul li .col em{
+    width: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+.board_wrap .my_form_wrap .my_form_inner .term_info_conts .term_conts ul li.first p{
     padding-bottom: 6px;
     font-weight: 500;
     font-size: 18px;
     color: #192c83;
+}
+.board_wrap .my_form_wrap .my_form_inner .term_info_conts .term_conts ul li .btn_add_list{
+    margin-left: 4px;
+    width: 50px;
+    height: 88px;
+    background-color: #eee;
+    border-radius: 8px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.board_wrap .my_form_wrap .my_form_inner .term_info_conts .term_conts ul li .btn_add_list span{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+    font-size: 0;
+    background:url("/ko/res/images/mypage/ico_list_add.png") no-repeat center/15px 15px;
+}
+
+
+.board_wrap .my_form_wrap .my_form_inner .term_info_conts.appoint_info_conts .term_conts .term_tit_box .lt{
+    margin-right: 2px;
+    width: calc( 50% - 29px);
+}
+.board_wrap .my_form_wrap .my_form_inner .term_info_conts.appoint_info_conts .term_conts .term_tit_box .rt{
+    margin-left: 2px;
+    padding: 0;
+    width: calc( 50% - 29px);
+}
+.board_wrap .my_form_wrap .my_form_inner .term_info_conts.appoint_info_conts .term_conts .term_tit_box p{
+    width: 100%;
+}
+.board_wrap .my_form_wrap .my_form_inner .term_info_conts.appoint_info_conts .term_conts ul li .txt_box{
+    width: calc( ( 100% - 58px ) / 2 );
+}
+.board_wrap .my_form_wrap .my_form_inner .term_info_conts.appoint_info_conts .term_conts ul li .txt_box.ko{
+    margin-right: 2px;
+}
+.board_wrap .my_form_wrap .my_form_inner .term_info_conts.appoint_info_conts .term_conts ul li .txt_box.en{
+    margin-left: 2px;
+}
+.board_wrap .my_form_wrap.read .my_form_inner .term_info_conts.appoint_info_conts .term_conts ul li .txt_box{
+    width: calc( ( 100% - 4px ) / 2 );
+}
+.board_wrap .my_form_wrap .my_form_inner .term_info_conts.appoint_info_conts .col p{
+    width: 100% !important;
 }
 .board_wrap .my_form_wrap .my_form_inner .research_box{
     padding-bottom: 70px;
@@ -909,6 +1077,7 @@
     }
     .board_wrap .my_form_wrap .my_form_inner .basic_info_conts{
         flex-direction: column;
+        padding-bottom: 20px;
     }
     .board_wrap .my_form_wrap .my_form_inner .basic_info_conts .info_box{
         padding-right: 0;
@@ -926,7 +1095,7 @@
         padding: 0 10px;
         width: 100%;
         height: 100%;
-        letter-spacing: -0.8px;
+        letter-spacing: -0.3px;
         font-size: 14px;
         border-radius: 5px;
     }
@@ -1012,50 +1181,133 @@
         height: 100%;
     }
     .board_wrap .my_form_wrap .my_form_inner .basic_info_conts .img_box .btn_upload input[type="file"] + label{
-        padding: 7px 0 8px;
-        background:#535353;
+        padding: 8px 0 9px;
     }
-    .board_wrap .my_form_wrap .my_form_inner .basic_info_conts .img_box .btn_upload input[type="file"] + label span{
-        font-size: 12px;
-        color:#fff;
+    .board_wrap .my_form_wrap .my_form_inner .term_info_conts{
+        margin: 0;
+        padding-top: 20px;
     }
-    .board_wrap .my_form_wrap .my_form_inner .basic_info_conts .img_box .btn_upload input[type="file"] + label span::before {
-        background: url("/ko/res/images/mypage/ico_btn_upload_w.png") no-repeat center / cover;
-    }
-    .board_wrap .my_form_wrap .my_form_inner .academic_info_conts{
-        padding-top: 40px;
-    }
-    .board_wrap .my_form_wrap .my_form_inner .academic_info_conts h4{
+    .board_wrap .my_form_wrap .my_form_inner .term_info_conts h4{
         margin-bottom: 24px;
     }
-    .board_wrap .my_form_wrap .my_form_inner .academic_info_conts .acd_conts ul li{
-        padding-bottom:5px;
+    .board_wrap .my_form_wrap .my_form_inner .term_info_conts .term_tit_box{
+        display: none !important;
     }
-    .board_wrap .my_form_wrap .my_form_inner .academic_info_conts .acd_conts ul li.first{
+    .board_wrap .my_form_wrap .my_form_inner .term_info_conts input::placeholder,
+    .board_wrap .my_form_wrap .my_form_inner .term_info_conts textarea::placeholder{
+        color: #bfbfbf;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .term_info_conts .term_conts ul li{
+        display: flex;
+        flex-direction: column;
+        padding-bottom:20px;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .term_info_conts .term_conts ul li.first{
         padding-bottom: 0;
     }
-    .board_wrap .my_form_wrap .my_form_inner .academic_info_conts .acd_conts ul li.first p {
+    .board_wrap .my_form_wrap .my_form_inner .term_info_conts .term_conts ul li.first p {
         padding-bottom: 8px;
         font-weight: 400;
         font-size: 14px;
     }
-    .board_wrap .my_form_wrap .my_form_inner .academic_info_conts .acd_conts ul li .col p {
+    .board_wrap .my_form_wrap .my_form_inner .term_info_conts .term_conts ul li .col p {
         width: calc((100% - 10px) / 2);
     }
-    .board_wrap .my_form_wrap .my_form_inner .academic_info_conts .acd_conts ul li .col.lt{
-        width: 130px;
+    .board_wrap .my_form_wrap .my_form_inner .term_info_conts .term_conts ul li .col.lt{
+        width: 100%;
     }
-    .board_wrap .my_form_wrap .my_form_inner .academic_info_conts .acd_conts ul li .col.lt .input_box input{
+    .board_wrap .my_form_wrap .my_form_inner .term_info_conts .term_conts ul li .col.lt .input_box input{
         padding:0 6px;
-        text-align: center;
     }
-    .board_wrap .my_form_wrap .my_form_inner .academic_info_conts .acd_conts ul li .rt {
-        padding-left: 20px;
-        width: calc(100% - 130px);
+    .board_wrap .my_form_wrap .my_form_inner .term_info_conts .term_conts ul li .rt {
+        flex-direction: column;
+        padding-left: 0;
+        padding-top: 5px;
+        width: 100%;
         box-sizing: border-box;
     }
+    .board_wrap .my_form_wrap .my_form_inner .term_info_conts .term_conts ul li .rt .ko{
+        width: 100%;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .term_info_conts .term_conts ul li .rt .en{
+        width: 100%;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .term_info_conts .term_conts ul li .txt_box textarea {
+        resize: none;
+        padding:12px 6px;
+        min-height: 70px;
+        line-height: 1.2;
+        letter-spacing: -0.4px;
+        font-size: 14px;
+        border-radius: 5px;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .term_info_conts .term_conts ul li .txt_box::after {
+        display: none;
+        bottom: 1px;
+        left: 6px;
+        transform: initial;
+        width: 94%;
+        height: 12px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .term_info_conts .term_conts ul li.first .rt{
+        flex-direction: row;
+    } 
+    .board_wrap .my_form_wrap .my_form_inner .term_info_conts .term_conts ul li.first .rt p{
+        width: auto;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .term_info_conts .term_conts ul li.first .rt p.en{
+        position: relative;
+        margin-top: 0;
+        margin-left: 10px;
+        margin-right: auto;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .term_info_conts .term_conts ul li.first .rt p.en::before{
+        content: "";
+        position: absolute;
+        left: -5px;
+        top:6px;
+        width: 1px;
+        height: 12px;
+        background-color: #192c83;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .term_info_conts .term_conts ul li .rt p{
+        width: 100%;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .term_info_conts .term_conts ul li .rt .en{
+        margin-top: 4px;
+        margin-left: 0;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .term_info_conts .term_conts ul li .btn_add_list{
+        margin-left: 0;
+        margin-top: 15px;
+        height: 44px;
+        border-radius: 8px;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .term_info_conts .term_conts ul li .btn_add_list span{
+        background:url("/ko/res/images/mypage/ico_list_add_mo.png") no-repeat center/22px;
+    }
+    
+
+    .board_wrap .my_form_wrap .my_form_inner .term_info_conts.appoint_info_conts .term_conts ul li .txt_box.ko{
+        margin: 0;
+        width: 100%;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .term_info_conts.appoint_info_conts .term_conts ul li .txt_box.en{
+        margin: 5px 0 0;
+        width: 100%;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .term_info_conts.appoint_info_conts .term_conts ul li .btn_add_list{
+        width: 100%;
+    }
+
     .board_wrap .my_form_wrap .my_form_inner .form_btn_box{
-        padding-top: 60px;
+        padding-top: 30px;
+    }
+    .board_wrap .my_form_wrap .my_form_inner .form_btn_box .btn{
+        height: 48px;
+        line-height: 48px;
     }
     .board_wrap .my_form_wrap .my_form_inner .form_btn_box .btn_wide {
         margin-left: 0;

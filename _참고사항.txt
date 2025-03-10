@@ -26,11 +26,12 @@
 2) 교수소개(탭메뉴만 추가됨)
 /00_02_professor_intro.html
 
-3) 마이페이지 - 기본정보
-/01_01_my_basic_info.html
+3) 마이페이지 - 기본정보 읽기
+/01_01_my_basic_info_read.html 
+-> 읽기페이지 경우에만 클래스명 .my_form_wrap에 read 클래스명 추가요청 ( 01_01_my_basic_info_read.html 파일 line 1144 참고)
 
-4) 마이페이지 - 기본정보수정
-/01_02_my_basic_info.html
+4) 마이페이지 - 기본정보 수정
+/01_02_my_basic_info_modify.html
 
 5) 마이페이지 - 연구분야/방법
 /02_my_study_area.html

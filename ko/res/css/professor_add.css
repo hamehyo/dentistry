@@ -244,7 +244,7 @@
     transform: translateY(-50%);
     width: 16px;
     height: 16px;
-    background: url("/ko/res/images/mypage/ico_btn_upload.png") no-repeat center/cover;
+    background: url("./ko/res/images/mypage/ico_btn_upload.png") no-repeat center/cover;
 }
 .board_wrap .my_form_wrap .my_form_inner .term_info_conts{
     margin:50px 0 0;
@@ -406,7 +406,7 @@
     height: 100%;
     vertical-align: top;
     font-size: 0;
-    background:url("/ko/res/images/mypage/ico_list_add.png") no-repeat center/15px 15px;
+    background:url("./ko/res/images/mypage/ico_list_add.png") no-repeat center/15px 15px;
 }
 
 
@@ -545,15 +545,15 @@
     padding-left: 27px;
 }
 .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .btn_wrap.top .btn.btn_excel span::after{
-    background: url("/ko/res/images/mypage/ico_btn_excel.png") no-repeat center/cover;
+    background: url("./ko/res/images/mypage/ico_btn_excel.png") no-repeat center/cover;
 }
 .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .btn_wrap.top .btn.btn_pure span::after{
-    background: url("/ko/res/images/mypage/icon_btn_pure.png") no-repeat center/cover;
+    background: url("./ko/res/images/mypage/icon_btn_pure.png") no-repeat center/cover;
 }
 .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .btn_wrap.top .btn.btn_add span::after{
     width: 20px;
     height: 15px;
-    background: url("/ko/res/images/mypage/ico_add_list.png") no-repeat center/cover;
+    background: url("./ko/res/images/mypage/ico_add_list.png") no-repeat center/cover;
 }
 .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w{
     padding-top: 45px;
@@ -599,10 +599,10 @@
     transform: translateY(-50%);
     width: 22px;
     height: 22px;
-    background:url("/ko/res/images/mypage/ico_chk_default.png") no-repeat center/cover;
+    background:url("./ko/res/images/mypage/ico_chk_default.png") no-repeat center/cover;
 }
 .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .ft_chk span input[type="checkbox"]:checked + label:after{
-    background:url("/ko/res/images/mypage/ico_chk_active.png") no-repeat center/cover;
+    background:url("./ko/res/images/mypage/ico_chk_active.png") no-repeat center/cover;
 }
 .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .filter_box .ft_sel{
     display: flex;
@@ -628,7 +628,7 @@
     border-radius: 6px;
     box-sizing: border-box;
     cursor: pointer;
-    background:url("/ko/res/images/mypage/ico_select_arw.png") no-repeat 90% 50%/11px 7px;
+    background:url("./ko/res/images/mypage/ico_select_arw.png") no-repeat 90% 50%/11px 7px;
 }
 .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box .rsh_list_w .filter_box .ft_sel span select{
     -moz-appearance:none;
@@ -792,7 +792,7 @@
     width: 64px;
     height: 35px;
     font-size: 0;
-    background:#eee url("/ko/res/images/mypage/ico_order_change.png") no-repeat center/20px 9px;
+    background:#eee url("./ko/res/images/mypage/ico_order_change.png") no-repeat center/20px 9px;
     border-radius: 20px;
     cursor: pointer;
 }
@@ -911,7 +911,7 @@
     font-size: 0;
     width: 52px;
     height: 52px;
-    background: #bfbfbf url("/ko/res/images/mypage/ico_del.png") no-repeat center/20px;
+    background: #bfbfbf url("./ko/res/images/mypage/ico_del.png") no-repeat center/20px;
 }
 .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box.right .date_inner{
     display: flex;
@@ -1286,7 +1286,7 @@
         border-radius: 8px;
     }
     .board_wrap .my_form_wrap .my_form_inner .term_info_conts .term_conts ul li .btn_add_list span{
-        background:url("/ko/res/images/mypage/ico_list_add_mo.png") no-repeat center/22px;
+        background:url("./ko/res/images/mypage/ico_list_add_mo.png") no-repeat center/22px;
     }
     
 
@@ -1426,7 +1426,7 @@
         width: 20px;
         height: 20px;
         font-size:0;
-        background:url("/ko/res/images/mypage/ico_popup_close.png") no-repeat center/cover;
+        background:url("./ko/res/images/mypage/ico_popup_close.png") no-repeat center/cover;
         cursor: pointer;
     }
     .board_wrap .my_form_wrap .my_form_inner .research_list_wrap .rsh_box.left.short {
